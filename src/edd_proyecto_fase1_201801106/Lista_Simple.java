@@ -1,20 +1,20 @@
 
-package edd_proyecto_fase1_201801106;
+package pkg201801106_t1_edd;
 
-public class Lista_Cliente {
+public class Lista_Simple {
     private Nodo cabecera;
     private int tamanio;
     
     public class Nodo{
-        public Cliente cliente;
+        public int valor;
         public Nodo siguiente = null;
-        public Nodo(Cliente cliente){
-            this.cliente= cliente;
+        public Nodo(int valor){
+            this.valor = valor;
         }
     }
     
-    public void InsertarIn(Cliente cliente){ //agregar al inicio
-        Nodo nuevo=new Nodo(cliente);
+    public void InsertarIn(int valor){ //agregar al inicio
+        Nodo nuevo=new Nodo(valor);
         if (cabecera== null){
             cabecera=nuevo;
         }else{
@@ -24,8 +24,8 @@ public class Lista_Cliente {
     
     }
     
-    public void InsertarFinal(Cliente cliente){ //inserta al final de la lista
-        Nodo nodonuevo = new Nodo(cliente);
+    public void InsertarFinal(int valor){ //inserta al final de la lista
+        Nodo nodonuevo = new Nodo(valor);
         if(cabecera == null){
             cabecera = nodonuevo;
         }
@@ -39,16 +39,17 @@ public class Lista_Cliente {
         
     }
     
-    public Cliente EliminarU(){ // elimina el primer dato de la lista
-        Nodo eliminado=cabecera;
+    public void shift(){ // elimina el primer dato de la lista
         if (cabecera==null){
     
         }else{
+            Nodo eliminado=cabecera;
             cabecera=eliminado.siguiente;
-            eliminado.siguiente=null;    
+            eliminado.siguiente=null;
+            
             
         }
-        return eliminado.cliente;   
+        
     }
     
     public void pop(){ // elimina el ultimo
@@ -62,13 +63,17 @@ public class Lista_Cliente {
                 actual=actual.siguiente;    
             }
             cola.siguiente=null;
-            
+           
             
             
         }
         
     }
-     
+    
+    
+    
+    
+    
     public void Mostrar(){
         if(cabecera == null){
             System.err.print("La lista se encuentra vacia");
@@ -77,7 +82,7 @@ public class Lista_Cliente {
             Nodo aux = cabecera;
             int c=0;
             while(aux != null){
-                System.out.println(aux.cliente.getNombre());
+                System.out.println(aux.valor);
                 aux = aux.siguiente;
             }
         }

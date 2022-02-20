@@ -21,6 +21,7 @@ import org.json.simple.parser.ParseException;
 public class EDD_PROYECTO_FASE1_201801106 {
     
     public static Lista_Cliente LClientes=new Lista_Cliente();
+    public static Lista_Ventanilla LVentanilla =new Lista_Ventanilla();
     
     public static void CargaM(String nombreD){
         JSONParser parser = new JSONParser();
@@ -43,6 +44,22 @@ public class EDD_PROYECTO_FASE1_201801106 {
         catch(ParseException e){}
         
     }
+    public static void Ventanilla(){
+        int ventanilla;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Ingrese cantidad de ventanillas");
+        ventanilla=sc.nextInt();
+        
+        for(int i=1;i<=ventanilla;i++){
+            Cliente cliente= new Cliente(0,"","","");
+            Pila_imagen pila=new Pila_imagen();
+            LVentanilla.InsertarFinal(i, cliente, pila,0);
+            
+        }
+       
+    }
+    
+    
     
     public static void Menu2(){
         int op=0;   
@@ -66,7 +83,7 @@ public class EDD_PROYECTO_FASE1_201801106 {
          
                 }break;  
                 case 2:{
-                    
+                    Ventanilla();
                    
                     
                     op=3; // para salir al menu principal
@@ -74,6 +91,17 @@ public class EDD_PROYECTO_FASE1_201801106 {
                  }break; 
             }
         }
+        
+    }
+    
+    public static void Ejecutar(){
+        int ide=LVentanilla.Buscar();
+        
+        if(ide!=0){
+            LVentanilla.Acliente(LClientes.EliminarU(),ide);
+            
+        }
+        
         
     }
 
@@ -97,10 +125,19 @@ public class EDD_PROYECTO_FASE1_201801106 {
                           
                 }break;  
                 case 2:{
-                    System.out.println("2");
+                    Ejecutar();
                     
                  }break; 
-                case 3:{    
+                case 3:{
+                    LVentanilla.Mostrar();
+                    
+                    
+                }break; 
+                
+                case 4:{
+                    LClientes.Mostrar();
+                    
+                    
                 }break; 
             }
         }
