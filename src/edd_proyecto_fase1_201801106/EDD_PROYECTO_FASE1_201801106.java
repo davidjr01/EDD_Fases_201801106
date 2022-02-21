@@ -26,6 +26,7 @@ public class EDD_PROYECTO_FASE1_201801106 {
     public static int contar=0,iVentanilla=0;
     public static Cliente cl;
     public static int  señal2=0;
+    int aaaa=0;
     
     
     public static void CargaM(String nombreD){
