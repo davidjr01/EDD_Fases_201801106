@@ -154,10 +154,11 @@ public class EDD_PROYECTO_FASE1_201801106 {
                     String cab="digraph G { "+"\n node [shape=box];\n";
                     String Gcliente=LClientes.Grafica();
                     String Gventanilla=LVentanilla.Grafica();
+                    String Gimpresora=LVentanilla.GraficarImpresora();
+                    total=cab+"\n"+Gcliente+"\n"+Gventanilla+"\n"+Gimpresora+"\n"+fin;
+                    System.out.println(total);
                     
-                    total=cab+Gventanilla+fin;
                     
-                    System.out.println(LVentanilla.Grafica());
                     
                     
                     

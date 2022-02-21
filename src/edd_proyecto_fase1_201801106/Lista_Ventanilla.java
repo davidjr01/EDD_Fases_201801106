@@ -6,6 +6,7 @@ import static java.lang.Integer.parseInt;
 public class Lista_Ventanilla {
     public String contenidoG="";
     public String contenidoIMG="";
+    public String contenidoIMP="";
     public Impresora color=new Impresora();
     public Impresora byn=new Impresora();
     private Lista_Paso  paso =new Lista_Paso();
@@ -241,7 +242,28 @@ public class Lista_Ventanilla {
             }
         }
     }
-    
+    public String GraficarImpresora(){
+        contenidoIMP="";
+        contenidoIMP+="\nsubgraph cluster_Impresora { \n label = \"Impresora\";color=blue \n";
+        contenidoIMP+="imp1[label=\"Impresora Color\"];\nimp2[label=\"Impresora ByN\"]\n";
+        String ss=color.GraPrimero();
+        String ssb=byn.GraPrimero();
+        String sc=color.Graficars();
+        String sb=byn.Graficars();
+        contenidoIMP+=sc+"\n";
+        contenidoIMP+=sb+"\n";
+        if(ss!=""){
+             contenidoIMP+="\n"+"{rank=same\n"+"imp1->"+ss+"\n}\n";   
+        }
+        if(ssb!=""){
+             contenidoIMP+="\n"+"{rank=same\n"+"imp2->"+ssb+"\n}\n}\n";
+        }
+       
+        
+        return contenidoIMP;
+         
+        
+    }
     
     public String Grafica(){
         contenidoG="";
