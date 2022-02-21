@@ -2,6 +2,7 @@
 package edd_proyecto_fase1_201801106;
 
 public class Lista_Cliente {
+    public String contenidoG="";
     private Nodo cabecera;
     private int tamanio;
     
@@ -81,6 +82,28 @@ public class Lista_Cliente {
                 aux = aux.siguiente;
             }
         }
+    }
+    
+    public String Grafica(){
+        contenidoG+= " subgraph cluster_cliente { \n" +"label = \"Clientes\";color=blue\n" ;
+        String nodos="";
+        String conexiones="";
+        
+        Nodo aux = cabecera;
+        int c=0;
+        while(aux != null){
+            nodos+="C"+aux.cliente.id+"[label=\""+aux.cliente.nombre + "\n Color:"+aux.cliente.imgC +"\n ByN:"+aux.cliente.imgBw +"\"];\n";
+            if(aux.siguiente != null){
+                conexiones+="C"+aux.cliente.id+ " -> "+"C"+aux.siguiente.cliente.id+";\n";
+            }
+            aux = aux.siguiente;
+        }
+        
+        contenidoG+=nodos+"\n";
+        contenidoG+="\n"+conexiones+"\n";
+        
+        contenidoG+="}";
+        return contenidoG;
     }
       
     

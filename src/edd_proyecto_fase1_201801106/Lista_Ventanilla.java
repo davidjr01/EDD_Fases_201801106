@@ -4,6 +4,7 @@ package edd_proyecto_fase1_201801106;
 import static java.lang.Integer.parseInt;
 
 public class Lista_Ventanilla {
+    public String contenidoG="";
     public Impresora color=new Impresora();
     public Impresora byn=new Impresora();
     private Lista_Paso  paso =new Lista_Paso();
@@ -238,6 +239,35 @@ public class Lista_Ventanilla {
             }
         }
     }
+    
+    public String Grafica(){
+        contenidoG+= " subgraph cluster_Ventanilla { \n" +"label = \"Ventanilla\";color=blue\n" ;
+        String nodos="";
+        String conexiones="";
+        String conexiones2="";
+        
+        Nodo aux = cabecera;
+        int c=0;
+        while(aux != null){
+            nodos+="v"+aux.id+"[label=\"Ventanilla "+aux.id +"\"];\n";
+            nodos+="Cl"+aux.id+"[label=\" "+aux.cliente.nombre +"\"];\n";
+            if(aux.siguiente != null){
+                conexiones+="v"+aux.id+ " -> "+"v"+aux.siguiente.id+";\n";
+            }
+            conexiones2+="\n{rank=same\n";
+            conexiones2+="Cl"+aux.id+ " -> "+"v"+aux.id+";\n";
+            conexiones2+="}";
+            aux = aux.siguiente;
+        }
+        
+        contenidoG+=nodos+"\n";
+        contenidoG+="\n"+conexiones2+"\n";
+        contenidoG+="\n"+conexiones+"\n";
+        
+        contenidoG+="}";
+        return contenidoG;
+    }
+    
       
     
 }

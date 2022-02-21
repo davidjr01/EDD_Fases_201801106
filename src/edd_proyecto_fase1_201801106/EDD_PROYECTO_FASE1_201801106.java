@@ -26,7 +26,7 @@ public class EDD_PROYECTO_FASE1_201801106 {
     public static int contar=0,iVentanilla=0;
     public static Cliente cl;
     public static int  señal2=0;
-    int aaaa=0;
+    
     
     
     public static void CargaM(String nombreD){
@@ -149,7 +149,15 @@ public class EDD_PROYECTO_FASE1_201801106 {
                     
                  }break; 
                 case 3:{
-                    LVentanilla.esperaClientes.Mostrar();
+                    String total="";
+                    String fin="\n}";
+                    String cab="digraph G { "+"\n node [shape=box];\n";
+                    String Gcliente=LClientes.Grafica();
+                    String Gventanilla=LVentanilla.Grafica();
+                    
+                    total=cab+Gventanilla+fin;
+                    System.out.println(total);
+                    
                     
                     
                     
