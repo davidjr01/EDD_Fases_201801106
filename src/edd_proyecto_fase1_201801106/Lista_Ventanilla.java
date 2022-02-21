@@ -5,6 +5,7 @@ import static java.lang.Integer.parseInt;
 
 public class Lista_Ventanilla {
     public String contenidoG="";
+    public String contenidoIMG="";
     public Impresora color=new Impresora();
     public Impresora byn=new Impresora();
     private Lista_Paso  paso =new Lista_Paso();
@@ -231,24 +232,30 @@ public class Lista_Ventanilla {
             Nodo aux = cabecera;
             int c=0;
             while(aux != null){
-                System.out.println("ventanilla  " + aux.id + "  " + "Cliente :  " + aux.cliente.getNombre() );
-                aux.pila.Mostrar();
-                System.out.println("");
+                //System.out.println("ventanilla  " + aux.id + "  " + "Cliente :  " + aux.cliente.getNombre() );
+                //aux.pila.Mostrar();
+                
+                System.out.println(aux.pila.Graficars());
                 aux = aux.siguiente;
                 
             }
         }
     }
     
+    
     public String Grafica(){
+        contenidoG="";
+        contenidoIMG="";
         contenidoG+= " subgraph cluster_Ventanilla { \n" +"label = \"Ventanilla\";color=blue\n" ;
         String nodos="";
         String conexiones="";
         String conexiones2="";
+        String conexiones3="";
         
         Nodo aux = cabecera;
         int c=0;
         while(aux != null){
+            contenidoIMG+=aux.pila.Graficars();
             nodos+="v"+aux.id+"[label=\"Ventanilla "+aux.id +"\"];\n";
             nodos+="Cl"+aux.id+"[label=\" "+aux.cliente.nombre +"\"];\n";
             if(aux.siguiente != null){
@@ -257,12 +264,19 @@ public class Lista_Ventanilla {
             conexiones2+="\n{rank=same\n";
             conexiones2+="Cl"+aux.id+ " -> "+"v"+aux.id+";\n";
             conexiones2+="}";
+            if(aux.cliente.nombre!=""){
+                conexiones3+="\n{rank=same\n" + "v"+aux.id+"->"+"I"+aux.id+"1\n}";
+                
+            }
+            
             aux = aux.siguiente;
         }
         
         contenidoG+=nodos+"\n";
+        contenidoG+=conexiones3;
         contenidoG+="\n"+conexiones2+"\n";
         contenidoG+="\n"+conexiones+"\n";
+        contenidoG+=contenidoIMG;
         
         contenidoG+="}";
         return contenidoG;

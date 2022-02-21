@@ -156,7 +156,8 @@ public class EDD_PROYECTO_FASE1_201801106 {
                     String Gventanilla=LVentanilla.Grafica();
                     
                     total=cab+Gventanilla+fin;
-                    System.out.println(total);
+                    
+                    System.out.println(LVentanilla.Grafica());
                     
                     
                     

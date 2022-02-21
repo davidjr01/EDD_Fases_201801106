@@ -85,6 +85,12 @@ public class Lista_Cliente {
     }
     
     public String Grafica(){
+        if(cabecera == null){
+            System.err.print("La lista se encuentra vacia");
+        }
+        else{
+            
+        }
         contenidoG+= " subgraph cluster_cliente { \n" +"label = \"Clientes\";color=blue\n" ;
         String nodos="";
         String conexiones="";
