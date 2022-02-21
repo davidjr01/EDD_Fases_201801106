@@ -10,12 +10,14 @@ public class Cliente {
     public String nombre;
     public String imgC;
     public String imgBw;
+    public int totalImagen;
     
-    public Cliente( int id , String nombre,String imgC,String imgBw) {
+    public Cliente( int id , String nombre,String imgC,String imgBw,int totalImagen) {
         this.id = id;
         this.nombre = nombre;
         this.imgC = imgC;
         this.imgBw = imgBw;
+        this.totalImagen = totalImagen;
         
     }
 
@@ -49,6 +51,14 @@ public class Cliente {
 
     public void setImgBw(String imgBw) {
         this.imgBw = imgBw;
+    }
+    
+    public int getTotalImagen() {
+        return totalImagen;
+    }
+
+    public void setTotalImagen(int totalImagen) {
+        this.totalImagen = totalImagen;
     }
     
     

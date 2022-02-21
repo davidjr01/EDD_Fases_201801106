@@ -22,6 +22,11 @@ public class EDD_PROYECTO_FASE1_201801106 {
     
     public static Lista_Cliente LClientes=new Lista_Cliente();
     public static Lista_Ventanilla LVentanilla =new Lista_Ventanilla();
+    public static Lista_Paso  datos =new Lista_Paso();
+    public static int contar=0,iVentanilla=0;
+    public static Cliente cl;
+    public static int  señal2=0;
+    
     
     public static void CargaM(String nombreD){
         JSONParser parser = new JSONParser();
@@ -33,7 +38,8 @@ public class EDD_PROYECTO_FASE1_201801106 {
             for (int i=1;i<=jsonObject.size();i++){
                 JSONObject contenido =(JSONObject) jsonObject.get("Cliente"+i);
                 //System.out.println(contenido.get("nombre_cliente"));
-                Cliente cliente=new Cliente(Integer.parseInt(contenido.get("id_cliente").toString()),contenido.get("nombre_cliente").toString(),contenido.get("img_color").toString(),contenido.get("img_bw").toString());
+                int tot= Integer.parseInt(contenido.get("img_color").toString())+ Integer.parseInt(contenido.get("img_bw").toString());      
+                Cliente cliente=new Cliente(Integer.parseInt(contenido.get("id_cliente").toString()),contenido.get("nombre_cliente").toString(),contenido.get("img_color").toString(),contenido.get("img_bw").toString(),tot);
                 LClientes.InsertarFinal(cliente);
             }
             System.out.println("Lectura con exito ");
@@ -43,6 +49,7 @@ public class EDD_PROYECTO_FASE1_201801106 {
         catch(IOException e){}
         catch(ParseException e){}
         
+        
     }
     public static void Ventanilla(){
         int ventanilla;
@@ -51,7 +58,7 @@ public class EDD_PROYECTO_FASE1_201801106 {
         ventanilla=sc.nextInt();
         
         for(int i=1;i<=ventanilla;i++){
-            Cliente cliente= new Cliente(0,"","","");
+            Cliente cliente= new Cliente(0,"","","",0);
             Pila_imagen pila=new Pila_imagen();
             LVentanilla.InsertarFinal(i, cliente, pila,0);
             
@@ -95,11 +102,23 @@ public class EDD_PROYECTO_FASE1_201801106 {
     }
     
     public static void Ejecutar(){
-        int ide=LVentanilla.Buscar();
-        
+        contar=contar+1;
+        System.out.println("______________________Paso "+ contar+" ______________________");
+        int ide=LVentanilla.Buscar(); 
         if(ide!=0){
-            LVentanilla.Acliente(LClientes.EliminarU(),ide);
+            cl=LClientes.EliminarU();
+            LVentanilla.Acliente(cl,ide);
+            System.out.println("El cliente  "+ cl.id + " Ingresa a Ventanilla "+ ide);
             
+        }
+        LVentanilla.Ocupado();
+        int b=LVentanilla.SeñalImpresora();
+        if(b==1){
+          señal2+=1;
+          if(señal2>1){
+              LVentanilla.Psos();
+          }
+ 
         }
         
         
@@ -129,7 +148,8 @@ public class EDD_PROYECTO_FASE1_201801106 {
                     
                  }break; 
                 case 3:{
-                    LVentanilla.Mostrar();
+                    LVentanilla.esperaClientes.Mostrar();
+                    
                     
                     
                 }break; 

@@ -40,6 +40,36 @@ public class Pila_imagen {
         }
         
     }
+
+    public int CColor(){
+         int color1=0;
+         Nodo aux = cabecera;
+         while(aux != null){
+              if(aux.tipo=="Color"){
+                  color1+=1;   
+              }
+              aux = aux.siguiente;
+              
+        }
+        return color1;
+        
+    }
+    
+    public int ByN(){
+        int bnr=0;
+         Nodo aux = cabecera;
+         while(aux != null){
+              if(aux.tipo=="ByN"){
+                  bnr+=1;   
+              }
+              aux = aux.siguiente;
+              
+        }
+        return bnr;
+        
+    }
+    
+
     
     
     public void Mostrar(){
