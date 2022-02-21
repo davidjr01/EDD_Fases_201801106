@@ -192,7 +192,14 @@ public class EDD_PROYECTO_FASE1_201801106 {
                     }catch(Exception e){
                          e.printStackTrace();
                     }
-                    
+                    System.out.println("Ventanilla\n");
+                    LVentanilla.Mostrar();
+                    System.out.println("\nimpresora color\n");
+                    LVentanilla.color.Mostrar();
+                    System.out.println("\nimpresora byn\n");
+                    LVentanilla.byn.Mostrar();
+                    System.out.println("\nlista espera\n");
+                    LVentanilla.esperaClientes.Mostrar();
                     
                     
                     
@@ -201,6 +208,12 @@ public class EDD_PROYECTO_FASE1_201801106 {
                 
                 case 4:{
                     LClientes.Mostrar();
+                    
+                    
+                }break; 
+                
+                case 5:{
+                    System.out.println("201801106 Luis David Juarez Reyes");
                     
                     
                 }break; 

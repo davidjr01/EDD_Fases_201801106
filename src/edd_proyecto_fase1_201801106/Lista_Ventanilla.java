@@ -233,10 +233,9 @@ public class Lista_Ventanilla {
             Nodo aux = cabecera;
             int c=0;
             while(aux != null){
-                //System.out.println("ventanilla  " + aux.id + "  " + "Cliente :  " + aux.cliente.getNombre() );
-                //aux.pila.Mostrar();
-                
-                System.out.println(aux.pila.Graficars());
+                System.out.println("ventanilla  " + aux.id + "  " + "Cliente :  " + aux.cliente.getNombre() );
+                aux.pila.Mostrar();
+
                 aux = aux.siguiente;
                 
             }

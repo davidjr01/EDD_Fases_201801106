@@ -3,6 +3,24 @@ digraph G {
 
  subgraph cluster_cliente { 
 label = "Clientes";color=blue
+C4[label="Faith Hopkins
+ Color:1
+ ByN:3"];
+C5[label="Sandy Mason
+ Color:1
+ ByN:4"];
+C6[label="Stefanie Wise
+ Color:1
+ ByN:0"];
+C7[label="Leach Ross
+ Color:3
+ ByN:4"];
+C8[label="Tabatha Pickett
+ Color:3
+ ByN:2"];
+C9[label="Tommie Mcpherson
+ Color:1
+ ByN:1"];
 C10[label="Shannon Johnston
  Color:0
  ByN:0"];
@@ -128,6 +146,12 @@ C50[label="Shana Burke
  ByN:4"];
 
 
+C4 -> C5;
+C5 -> C6;
+C6 -> C7;
+C7 -> C8;
+C8 -> C9;
+C9 -> C10;
 C10 -> C11;
 C11 -> C12;
 C12 -> C13;
@@ -171,6 +195,24 @@ C49 -> C50;
 
 } subgraph cluster_cliente { 
 label = "Clientes";color=blue
+C4[label="Faith Hopkins
+ Color:1
+ ByN:3"];
+C5[label="Sandy Mason
+ Color:1
+ ByN:4"];
+C6[label="Stefanie Wise
+ Color:1
+ ByN:0"];
+C7[label="Leach Ross
+ Color:3
+ ByN:4"];
+C8[label="Tabatha Pickett
+ Color:3
+ ByN:2"];
+C9[label="Tommie Mcpherson
+ Color:1
+ ByN:1"];
 C10[label="Shannon Johnston
  Color:0
  ByN:0"];
@@ -296,6 +338,12 @@ C50[label="Shana Burke
  ByN:4"];
 
 
+C4 -> C5;
+C5 -> C6;
+C6 -> C7;
+C7 -> C8;
+C8 -> C9;
+C9 -> C10;
 C10 -> C11;
 C11 -> C12;
 C12 -> C13;
@@ -337,15 +385,531 @@ C47 -> C48;
 C48 -> C49;
 C49 -> C50;
 
+} subgraph cluster_cliente { 
+label = "Clientes";color=blue
+C4[label="Faith Hopkins
+ Color:1
+ ByN:3"];
+C5[label="Sandy Mason
+ Color:1
+ ByN:4"];
+C6[label="Stefanie Wise
+ Color:1
+ ByN:0"];
+C7[label="Leach Ross
+ Color:3
+ ByN:4"];
+C8[label="Tabatha Pickett
+ Color:3
+ ByN:2"];
+C9[label="Tommie Mcpherson
+ Color:1
+ ByN:1"];
+C10[label="Shannon Johnston
+ Color:0
+ ByN:0"];
+C11[label="Leigh Bright
+ Color:1
+ ByN:4"];
+C12[label="Alyce Alford
+ Color:3
+ ByN:0"];
+C13[label="Haley Rosario
+ Color:0
+ ByN:4"];
+C14[label="Durham Logan
+ Color:3
+ ByN:2"];
+C15[label="Elinor Ford
+ Color:0
+ ByN:0"];
+C16[label="Noelle Morse
+ Color:0
+ ByN:1"];
+C17[label="Gutierrez Casey
+ Color:3
+ ByN:4"];
+C18[label="Long Meyer
+ Color:3
+ ByN:0"];
+C19[label="Geraldine Pierce
+ Color:3
+ ByN:1"];
+C20[label="Roman Branch
+ Color:3
+ ByN:2"];
+C21[label="Pruitt Perez
+ Color:4
+ ByN:2"];
+C22[label="Nola Winters
+ Color:3
+ ByN:1"];
+C23[label="Gay Mcmillan
+ Color:0
+ ByN:1"];
+C24[label="Carolyn Harmon
+ Color:3
+ ByN:2"];
+C25[label="Jolene Mccall
+ Color:0
+ ByN:0"];
+C26[label="Evelyn Fitzgerald
+ Color:0
+ ByN:1"];
+C27[label="Hudson Lancaster
+ Color:1
+ ByN:1"];
+C28[label="Ellison Hood
+ Color:3
+ ByN:0"];
+C29[label="Whitney Clayton
+ Color:0
+ ByN:4"];
+C30[label="Moore Horton
+ Color:0
+ ByN:4"];
+C31[label="Maggie Levine
+ Color:4
+ ByN:2"];
+C32[label="Andrews Vance
+ Color:2
+ ByN:1"];
+C33[label="Dixie Howard
+ Color:0
+ ByN:4"];
+C34[label="Heidi Lowery
+ Color:4
+ ByN:2"];
+C35[label="Bennett Malone
+ Color:4
+ ByN:2"];
+C36[label="Witt Forbes
+ Color:1
+ ByN:0"];
+C37[label="Erma Barron
+ Color:1
+ ByN:4"];
+C38[label="Mabel Nicholson
+ Color:2
+ ByN:0"];
+C39[label="Maddox Frazier
+ Color:1
+ ByN:1"];
+C40[label="Brigitte Wheeler
+ Color:4
+ ByN:3"];
+C41[label="Christa Mendoza
+ Color:2
+ ByN:3"];
+C42[label="Etta Blake
+ Color:3
+ ByN:0"];
+C43[label="Macdonald Murray
+ Color:1
+ ByN:1"];
+C44[label="Garza York
+ Color:2
+ ByN:0"];
+C45[label="Hatfield Sykes
+ Color:1
+ ByN:0"];
+C46[label="Washington Dickerson
+ Color:3
+ ByN:0"];
+C47[label="Ethel Cortez
+ Color:3
+ ByN:2"];
+C48[label="Vicky Jimenez
+ Color:4
+ ByN:4"];
+C49[label="Romero Sanders
+ Color:2
+ ByN:0"];
+C50[label="Shana Burke
+ Color:0
+ ByN:4"];
+
+
+C4 -> C5;
+C5 -> C6;
+C6 -> C7;
+C7 -> C8;
+C8 -> C9;
+C9 -> C10;
+C10 -> C11;
+C11 -> C12;
+C12 -> C13;
+C13 -> C14;
+C14 -> C15;
+C15 -> C16;
+C16 -> C17;
+C17 -> C18;
+C18 -> C19;
+C19 -> C20;
+C20 -> C21;
+C21 -> C22;
+C22 -> C23;
+C23 -> C24;
+C24 -> C25;
+C25 -> C26;
+C26 -> C27;
+C27 -> C28;
+C28 -> C29;
+C29 -> C30;
+C30 -> C31;
+C31 -> C32;
+C32 -> C33;
+C33 -> C34;
+C34 -> C35;
+C35 -> C36;
+C36 -> C37;
+C37 -> C38;
+C38 -> C39;
+C39 -> C40;
+C40 -> C41;
+C41 -> C42;
+C42 -> C43;
+C43 -> C44;
+C44 -> C45;
+C45 -> C46;
+C46 -> C47;
+C47 -> C48;
+C48 -> C49;
+C49 -> C50;
+
+} subgraph cluster_cliente { 
+label = "Clientes";color=blue
+C9[label="Tommie Mcpherson
+ Color:1
+ ByN:1"];
+C10[label="Shannon Johnston
+ Color:0
+ ByN:0"];
+C11[label="Leigh Bright
+ Color:1
+ ByN:4"];
+C12[label="Alyce Alford
+ Color:3
+ ByN:0"];
+C13[label="Haley Rosario
+ Color:0
+ ByN:4"];
+C14[label="Durham Logan
+ Color:3
+ ByN:2"];
+C15[label="Elinor Ford
+ Color:0
+ ByN:0"];
+C16[label="Noelle Morse
+ Color:0
+ ByN:1"];
+C17[label="Gutierrez Casey
+ Color:3
+ ByN:4"];
+C18[label="Long Meyer
+ Color:3
+ ByN:0"];
+C19[label="Geraldine Pierce
+ Color:3
+ ByN:1"];
+C20[label="Roman Branch
+ Color:3
+ ByN:2"];
+C21[label="Pruitt Perez
+ Color:4
+ ByN:2"];
+C22[label="Nola Winters
+ Color:3
+ ByN:1"];
+C23[label="Gay Mcmillan
+ Color:0
+ ByN:1"];
+C24[label="Carolyn Harmon
+ Color:3
+ ByN:2"];
+C25[label="Jolene Mccall
+ Color:0
+ ByN:0"];
+C26[label="Evelyn Fitzgerald
+ Color:0
+ ByN:1"];
+C27[label="Hudson Lancaster
+ Color:1
+ ByN:1"];
+C28[label="Ellison Hood
+ Color:3
+ ByN:0"];
+C29[label="Whitney Clayton
+ Color:0
+ ByN:4"];
+C30[label="Moore Horton
+ Color:0
+ ByN:4"];
+C31[label="Maggie Levine
+ Color:4
+ ByN:2"];
+C32[label="Andrews Vance
+ Color:2
+ ByN:1"];
+C33[label="Dixie Howard
+ Color:0
+ ByN:4"];
+C34[label="Heidi Lowery
+ Color:4
+ ByN:2"];
+C35[label="Bennett Malone
+ Color:4
+ ByN:2"];
+C36[label="Witt Forbes
+ Color:1
+ ByN:0"];
+C37[label="Erma Barron
+ Color:1
+ ByN:4"];
+C38[label="Mabel Nicholson
+ Color:2
+ ByN:0"];
+C39[label="Maddox Frazier
+ Color:1
+ ByN:1"];
+C40[label="Brigitte Wheeler
+ Color:4
+ ByN:3"];
+C41[label="Christa Mendoza
+ Color:2
+ ByN:3"];
+C42[label="Etta Blake
+ Color:3
+ ByN:0"];
+C43[label="Macdonald Murray
+ Color:1
+ ByN:1"];
+C44[label="Garza York
+ Color:2
+ ByN:0"];
+C45[label="Hatfield Sykes
+ Color:1
+ ByN:0"];
+C46[label="Washington Dickerson
+ Color:3
+ ByN:0"];
+C47[label="Ethel Cortez
+ Color:3
+ ByN:2"];
+C48[label="Vicky Jimenez
+ Color:4
+ ByN:4"];
+C49[label="Romero Sanders
+ Color:2
+ ByN:0"];
+C50[label="Shana Burke
+ Color:0
+ ByN:4"];
+
+
+C9 -> C10;
+C10 -> C11;
+C11 -> C12;
+C12 -> C13;
+C13 -> C14;
+C14 -> C15;
+C15 -> C16;
+C16 -> C17;
+C17 -> C18;
+C18 -> C19;
+C19 -> C20;
+C20 -> C21;
+C21 -> C22;
+C22 -> C23;
+C23 -> C24;
+C24 -> C25;
+C25 -> C26;
+C26 -> C27;
+C27 -> C28;
+C28 -> C29;
+C29 -> C30;
+C30 -> C31;
+C31 -> C32;
+C32 -> C33;
+C33 -> C34;
+C34 -> C35;
+C35 -> C36;
+C36 -> C37;
+C37 -> C38;
+C38 -> C39;
+C39 -> C40;
+C40 -> C41;
+C41 -> C42;
+C42 -> C43;
+C43 -> C44;
+C44 -> C45;
+C45 -> C46;
+C46 -> C47;
+C47 -> C48;
+C48 -> C49;
+C49 -> C50;
+
+} subgraph cluster_cliente { 
+label = "Clientes";color=blue
+C14[label="Durham Logan
+ Color:3
+ ByN:2"];
+C15[label="Elinor Ford
+ Color:0
+ ByN:0"];
+C16[label="Noelle Morse
+ Color:0
+ ByN:1"];
+C17[label="Gutierrez Casey
+ Color:3
+ ByN:4"];
+C18[label="Long Meyer
+ Color:3
+ ByN:0"];
+C19[label="Geraldine Pierce
+ Color:3
+ ByN:1"];
+C20[label="Roman Branch
+ Color:3
+ ByN:2"];
+C21[label="Pruitt Perez
+ Color:4
+ ByN:2"];
+C22[label="Nola Winters
+ Color:3
+ ByN:1"];
+C23[label="Gay Mcmillan
+ Color:0
+ ByN:1"];
+C24[label="Carolyn Harmon
+ Color:3
+ ByN:2"];
+C25[label="Jolene Mccall
+ Color:0
+ ByN:0"];
+C26[label="Evelyn Fitzgerald
+ Color:0
+ ByN:1"];
+C27[label="Hudson Lancaster
+ Color:1
+ ByN:1"];
+C28[label="Ellison Hood
+ Color:3
+ ByN:0"];
+C29[label="Whitney Clayton
+ Color:0
+ ByN:4"];
+C30[label="Moore Horton
+ Color:0
+ ByN:4"];
+C31[label="Maggie Levine
+ Color:4
+ ByN:2"];
+C32[label="Andrews Vance
+ Color:2
+ ByN:1"];
+C33[label="Dixie Howard
+ Color:0
+ ByN:4"];
+C34[label="Heidi Lowery
+ Color:4
+ ByN:2"];
+C35[label="Bennett Malone
+ Color:4
+ ByN:2"];
+C36[label="Witt Forbes
+ Color:1
+ ByN:0"];
+C37[label="Erma Barron
+ Color:1
+ ByN:4"];
+C38[label="Mabel Nicholson
+ Color:2
+ ByN:0"];
+C39[label="Maddox Frazier
+ Color:1
+ ByN:1"];
+C40[label="Brigitte Wheeler
+ Color:4
+ ByN:3"];
+C41[label="Christa Mendoza
+ Color:2
+ ByN:3"];
+C42[label="Etta Blake
+ Color:3
+ ByN:0"];
+C43[label="Macdonald Murray
+ Color:1
+ ByN:1"];
+C44[label="Garza York
+ Color:2
+ ByN:0"];
+C45[label="Hatfield Sykes
+ Color:1
+ ByN:0"];
+C46[label="Washington Dickerson
+ Color:3
+ ByN:0"];
+C47[label="Ethel Cortez
+ Color:3
+ ByN:2"];
+C48[label="Vicky Jimenez
+ Color:4
+ ByN:4"];
+C49[label="Romero Sanders
+ Color:2
+ ByN:0"];
+C50[label="Shana Burke
+ Color:0
+ ByN:4"];
+
+
+C14 -> C15;
+C15 -> C16;
+C16 -> C17;
+C17 -> C18;
+C18 -> C19;
+C19 -> C20;
+C20 -> C21;
+C21 -> C22;
+C22 -> C23;
+C23 -> C24;
+C24 -> C25;
+C25 -> C26;
+C26 -> C27;
+C27 -> C28;
+C28 -> C29;
+C29 -> C30;
+C30 -> C31;
+C31 -> C32;
+C32 -> C33;
+C33 -> C34;
+C34 -> C35;
+C35 -> C36;
+C36 -> C37;
+C37 -> C38;
+C38 -> C39;
+C39 -> C40;
+C40 -> C41;
+C41 -> C42;
+C42 -> C43;
+C43 -> C44;
+C44 -> C45;
+C45 -> C46;
+C46 -> C47;
+C47 -> C48;
+C48 -> C49;
+C49 -> C50;
+
 }
  subgraph cluster_Ventanilla { 
 label = "Ventanilla";color=blue
 v1[label="Ventanilla 1"];
-Cl1[label=" Tabatha Pickett"];
+Cl1[label=" Leigh Bright"];
 v2[label="Ventanilla 2"];
-Cl2[label=" Tommie Mcpherson"];
+Cl2[label=" Alyce Alford"];
 v3[label="Ventanilla 3"];
-Cl3[label=" Leach Ross"];
+Cl3[label=" Haley Rosario"];
 
 
 {rank=same
@@ -371,37 +935,39 @@ Cl3 -> v3;
 v1 -> v2;
 v2 -> v3;
 
-I81[label="Color"];
-I82[label="Color"];
-I83[label="Color"];
+I111[label="ByN"];
+I112[label="ByN"];
+I113[label="ByN"];
+I114[label="Color"];
 
 
 {rank=same
 
-I81 -> I82;
-I82 -> I83;
+I111 -> I112;
+I112 -> I113;
+I113 -> I114;
 
 
 }
-I91[label="Color"];
+I121[label="Color"];
+I122[label="Color"];
+I123[label="Color"];
 
 
 {rank=same
 
+I121 -> I122;
+I122 -> I123;
 
 
 }
-I71[label="ByN"];
-I72[label="Color"];
-I73[label="Color"];
-I74[label="Color"];
+I131[label="ByN"];
+I132[label="ByN"];
 
 
 {rank=same
 
-I71 -> I72;
-I72 -> I73;
-I73 -> I74;
+I131 -> I132;
 
 
 }
@@ -411,56 +977,70 @@ subgraph cluster_Impresora {
  label = "Impresora";color=blue 
 imp1[label="Impresora Color"];
 imp2[label="Impresora ByN"]
-Im61Color[label="Color"];
-Im42Color[label="Color"];
-Im53Color[label="Color"];
+Im91Color[label="Color"];
+Im82Color[label="Color"];
+Im83Color[label="Color"];
+Im84Color[label="Color"];
+Im75Color[label="Color"];
+Im76Color[label="Color"];
+Im77Color[label="Color"];
 
 
 {rank=same
 
-Im61Color -> Im42Color;
-Im42Color -> Im53Color;
+Im91Color -> Im82Color;
+Im82Color -> Im83Color;
+Im83Color -> Im84Color;
+Im84Color -> Im75Color;
+Im75Color -> Im76Color;
+Im76Color -> Im77Color;
 
 
 }
 
-Im31ByN[label="ByN"];
-Im22ByN[label="ByN"];
-Im23ByN[label="ByN"];
-Im24ByN[label="ByN"];
-Im25ByN[label="ByN"];
-Im46ByN[label="ByN"];
-Im47ByN[label="ByN"];
-Im48ByN[label="ByN"];
-Im59ByN[label="ByN"];
-Im510ByN[label="ByN"];
-Im511ByN[label="ByN"];
-Im512ByN[label="ByN"];
+Im21ByN[label="ByN"];
+Im42ByN[label="ByN"];
+Im43ByN[label="ByN"];
+Im44ByN[label="ByN"];
+Im55ByN[label="ByN"];
+Im56ByN[label="ByN"];
+Im57ByN[label="ByN"];
+Im58ByN[label="ByN"];
+Im99ByN[label="ByN"];
+Im810ByN[label="ByN"];
+Im811ByN[label="ByN"];
+Im712ByN[label="ByN"];
+Im713ByN[label="ByN"];
+Im714ByN[label="ByN"];
+Im715ByN[label="ByN"];
 
 
 {rank=same
 
-Im31ByN -> Im22ByN;
-Im22ByN -> Im23ByN;
-Im23ByN -> Im24ByN;
-Im24ByN -> Im25ByN;
-Im25ByN -> Im46ByN;
-Im46ByN -> Im47ByN;
-Im47ByN -> Im48ByN;
-Im48ByN -> Im59ByN;
-Im59ByN -> Im510ByN;
-Im510ByN -> Im511ByN;
-Im511ByN -> Im512ByN;
+Im21ByN -> Im42ByN;
+Im42ByN -> Im43ByN;
+Im43ByN -> Im44ByN;
+Im44ByN -> Im55ByN;
+Im55ByN -> Im56ByN;
+Im56ByN -> Im57ByN;
+Im57ByN -> Im58ByN;
+Im58ByN -> Im99ByN;
+Im99ByN -> Im810ByN;
+Im810ByN -> Im811ByN;
+Im811ByN -> Im712ByN;
+Im712ByN -> Im713ByN;
+Im713ByN -> Im714ByN;
+Im714ByN -> Im715ByN;
 
 
 }
 
 
 {rank=same
-imp1->Im61Color
+imp1->Im91Color
 
 {rank=same
-imp2->Im31ByN
+imp2->Im21ByN
 }
 
 }
