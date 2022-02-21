@@ -253,11 +253,12 @@ public class Lista_Ventanilla {
         contenidoIMP+=sc+"\n";
         contenidoIMP+=sb+"\n";
         if(ss!=""){
-             contenidoIMP+="\n"+"{rank=same\n"+"imp1->"+ss+"\n}\n";   
+             contenidoIMP+="\n"+"{rank=same\n"+"imp1->"+ss+"\n";   
         }
         if(ssb!=""){
-             contenidoIMP+="\n"+"{rank=same\n"+"imp2->"+ssb+"\n}\n}\n";
+             contenidoIMP+="\n"+"{rank=same\n"+"imp2->"+ssb+"\n}\n";
         }
+        contenidoIMP+="\n}";
        
         
         return contenidoIMP;

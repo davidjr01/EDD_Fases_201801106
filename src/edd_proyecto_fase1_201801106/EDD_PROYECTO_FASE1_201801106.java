@@ -8,7 +8,9 @@ package edd_proyecto_fase1_201801106;
 import java.io.FileNotFoundException;
 import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -124,6 +126,29 @@ public class EDD_PROYECTO_FASE1_201801106 {
         
         
     }
+    
+    public static void Crear(String ruta,String contenido){
+        FileWriter fw=null;
+        PrintWriter pw=null;
+        try{
+            fw=new FileWriter(ruta);
+            pw=new PrintWriter(fw);
+            pw.write(contenido);
+            pw.close();
+            fw.close();
+            
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            if (pw!=null)
+                pw.close();
+        }
+         
+    }
+    
+     public void Dibujar(){
+         
+     }
 
     public static void main(String[] args) {
         int op=0;   
@@ -156,8 +181,17 @@ public class EDD_PROYECTO_FASE1_201801106 {
                     String Gventanilla=LVentanilla.Grafica();
                     String Gimpresora=LVentanilla.GraficarImpresora();
                     total=cab+"\n"+Gcliente+"\n"+Gventanilla+"\n"+Gimpresora+"\n"+fin;
-                    System.out.println(total);
                     
+                    try{
+                        Crear("file.dot",total);
+                        ProcessBuilder pb;
+                        pb=new ProcessBuilder("dot","-Tpng","-o","list.png","file.dot");
+                        pb.redirectErrorStream(true);
+                        pb.start();
+            
+                    }catch(Exception e){
+                         e.printStackTrace();
+                    }
                     
                     
                     
@@ -173,6 +207,9 @@ public class EDD_PROYECTO_FASE1_201801106 {
             }
         }
     }
+    
+    
+    
     
         
  }
