@@ -124,7 +124,7 @@ public class Matriz {
             while (actual != null){
                 String nombrenodo="nodo"+actual.fila+actual.columna;
                 String y="\"" +actual.dato+"\"";
-                String nodo=nombrenodo+"[label="+y+",group="+ controlx+"]";
+                String nodo=nombrenodo+"[label="+y+",group="+ controlx+ ",style=\"filled\",fillcolor=\"black\" " +"]";
                 resultado += nodo+"\n";
                 resultado += nombrex+"->"+nombrenodo+"\n";
                 resultado+=nombrenodo+"->"+nombrex+"\n";
