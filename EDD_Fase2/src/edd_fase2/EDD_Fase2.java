@@ -8,9 +8,9 @@ public class EDD_Fase2 {
         
         
         Matriz matriz=new Matriz();
-        matriz.append(1, 1, "hola");
-        matriz.append(10, 10, "hola");
-        matriz.append(5, 2, "hola");
+        matriz.append(1, 1, "");
+        matriz.append(10, 10, "");
+        matriz.append(5, 2, "");
         matriz.Graficar_Nodo();
         
         

@@ -11,21 +11,21 @@ Y10[label="Y=10",group=0]
 Y2->Y10
 Y10->Y2
 X1[label="X=1",group=1]
-nodo11[label="hola",group=1,style="filled",fillcolor="black" ]
+nodo11[label="",group=1,style="filled",fillcolor="black" ]
 X1->nodo11
 nodo11->X1
 Y0->X1
 X1->Y0
 {rank="same";Y0;X1;}
 X5[label="X=5",group=2]
-nodo52[label="hola",group=2,style="filled",fillcolor="black" ]
+nodo52[label="",group=2,style="filled",fillcolor="black" ]
 X5->nodo52
 nodo52->X5
 X1->X5
 X5->X1
 {rank="same";X1;X5}
 X10[label="X=10",group=3]
-nodo1010[label="hola",group=3,style="filled",fillcolor="black" ]
+nodo1010[label="",group=3,style="filled",fillcolor="black" ]
 X10->nodo1010
 nodo1010->X10
 X5->X10
