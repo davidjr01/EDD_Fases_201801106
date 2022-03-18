@@ -80,6 +80,40 @@ public class Matriz {
         }
     }
     
+    boolean verificarExiste( int ff, int cc){
+        boolean encontrado=false;
+        nCabecera CFila = this.CFilas.primero;
+        while (CFila != null){
+            Nodo actual = CFila.accesoNodo;
+            int f=actual.fila;
+            while (actual !=null){
+                int c=actual.columna;
+                if ((c==cc) && ( f==ff)){
+                    encontrado=true;
+                }
+                actual = actual.derecha;
+            }
+            CFila = CFila.siguiente;
+        }
+        return encontrado;
+    }
+    
+    public void Actualizar(int ff, int cc,String dato){
+        nCabecera CFila = this.CFilas.primero;
+        while (CFila != null){
+            Nodo actual = CFila.accesoNodo;
+            int f=actual.fila;
+            while (actual != null){
+                int c=actual.columna;
+                if ((c==cc) && ( f==ff)){ 
+                    actual.dato=dato;
+                }
+                actual = actual.derecha;
+            }
+            CFila = CFila.siguiente;
+        }
+    }
+    
     public void  Graficar_Nodo(){
         int controlx=0;
         nCabecera CFila,CColumna;
@@ -125,7 +159,7 @@ public class Matriz {
             while (actual != null){
                 String nombrenodo="nodo"+actual.fila+actual.columna;
                 String y="\"" +actual.dato+"\"";
-                String nodo=nombrenodo+"[label="+y+",group="+ controlx+"]";
+                String nodo=nombrenodo+"[label=\"\""+",group="+ controlx+ ",style=\"filled\", color="+ y+ ", fillcolor="+y +"]";
                 resultado += nodo+"\n";
                 resultado += nombrex+"->"+nombrenodo+"\n";
                 resultado+=nombrenodo+"->"+nombrex+"\n";
