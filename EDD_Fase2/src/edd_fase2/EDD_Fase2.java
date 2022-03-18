@@ -1,19 +1,54 @@
 
 package edd_fase2;
 
+import java.io.FileNotFoundException;
+import org.json.simple.parser.JSONParser;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
+
 public class EDD_Fase2 {
+    
+    public static void CargaM(String nombreD){
+        JSONParser parser = new JSONParser();
+        
+        try{
+             Object obj = parser.parse(new FileReader(nombreD));
+             JSONArray array = (JSONArray) obj;   
+             for (int i=0;i<array.size();i++){
+                 JSONObject jsonO = (JSONObject) array.get(i);
+                 System.out.println("capa : " + jsonO.get("id_capa")+"--------------------------------");
+                 JSONArray pixeles = (JSONArray) jsonO.get("pixeles");
+                 for (int j=0;j<pixeles.size();j++){
+                     JSONObject pixel2 = (JSONObject) pixeles.get(j);
+                     System.out.println("fila:" + pixel2.get("fila"));
+                     System.out.println("columna:" + pixel2.get("columna"));
+                     System.out.println("color:" + pixel2.get("color"));
+                     
+                 }
+                 
+                 
+             }
+             
+    
+            System.out.println("Lectura con exito ");
+            
+        }catch(FileNotFoundException e){
+            System.out.println("No se encontro el documento");}
+        catch(IOException e){}
+        catch(ParseException e){}
+        
+        
+    }
 
     
     public static void main(String[] args) {
-        
-        
-        Matriz matriz=new Matriz();
-        matriz.append(1, 1, "blue");
-        matriz.append(10, 10, "blue");
-        matriz.append(5, 2, "blue");
-  
-        
-        matriz.Graficar_Nodo();
+        CargaM("mario.json");
         
         
     }
