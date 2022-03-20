@@ -139,7 +139,7 @@ public class Matriz {
             String nodoy=nny+ "[label="+label+",group=0]";
             resultado += nodoy+"\n";
             resultado += nombrey+"->"+nny+"\n";
-            resultado += nny+"->"+nombrey+"\n";
+            resultado += nny+"->"+nombrey+"\n"; 
 
             nombrey=nny;
             
