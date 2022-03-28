@@ -13,6 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 public class EDD_Fase2 {
+    public static Matriz m =new Matriz();
     
     public static void CargaM(String nombreD){
         JSONParser parser = new JSONParser();
@@ -26,6 +27,15 @@ public class EDD_Fase2 {
                  JSONArray pixeles = (JSONArray) jsonO.get("pixeles");
                  for (int j=0;j<pixeles.size();j++){
                      JSONObject pixel2 = (JSONObject) pixeles.get(j);
+                     int filaa=Integer.parseInt(pixel2.get("fila").toString());
+                     int columnaa=Integer.parseInt(pixel2.get("columna").toString());
+                     String datoo=pixel2.get("color").toString();
+                     if( m.verificarExiste(columnaa,filaa)){
+                       m.Actualizar(columnaa, filaa, datoo);
+                       }
+                     else{
+                     m.append(columnaa,filaa, datoo);
+                     }
                      System.out.println("fila:" + pixel2.get("fila"));
                      System.out.println("columna:" + pixel2.get("columna"));
                      System.out.println("color:" + pixel2.get("color"));
@@ -50,6 +60,9 @@ public class EDD_Fase2 {
     public static void main(String[] args) {
         CargaM("mario.json");
         
+        
+    
+        m.Graficar_Nodo3();
         
     }
     
