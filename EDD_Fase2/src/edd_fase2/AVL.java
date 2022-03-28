@@ -23,7 +23,49 @@ public class AVL {
         root=null;
         
     }
+    public void add(int id){
+        this.root=this._add(id,this.root);
+        
+    }
+
     
+    
+    
+    public Nodo _add(int id,Nodo root){
+        if (root == null){
+            Nodo x=new Nodo(id);
+            return x;
+            }
+        else{
+            if (id < root.id){
+                root.izquierda = this._add(id,root.izquierda);
+                if (this.height(root.derecha) - this.height(root.izquierda) == -2){
+                    if (id < root.izquierda.id){
+                        root = this.SimpleIzq(root);
+                    }
+                    else{
+                        root = this.dobleIzq(root);
+                    }
+                }
+            }
+            else if(id>root.id) {
+                root.derecha = this._add( id, root.derecha);
+                if (this.height(root.derecha) - this.height(root.izquierda) == 2){
+                    if (id > root.derecha.id){
+                        root = this.SimpleDer(root);
+                    }
+                    else{
+                        root = this.dobleDer(root);
+                    }
+                }
+            }
+            else{
+                root.id = id;
+            }
+        }
+        root.tamaño = this.max_min(this.height(root.izquierda), this.height(root.derecha)) + 1;
+        return root;
+    }
     
     public int height(Nodo nodo){
         if (nodo!=null){
