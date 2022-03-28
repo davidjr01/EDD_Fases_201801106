@@ -59,6 +59,8 @@ public class EDD_Fase2 {
     
     public static void main(String[] args) {
         CargaM("mario.json");
+        Arbolabb x;
+        
         
         
     
