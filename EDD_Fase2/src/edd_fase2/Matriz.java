@@ -447,7 +447,7 @@ public class Matriz {
         
         try{
             ProcessBuilder pb;
-            pb=new ProcessBuilder("dot","-Tpng","-o","matriz.png","Grafica.dot");
+            pb=new ProcessBuilder("dot","-Gnslimit=2","-Tpng","Grafica.dot","-o","matriz.png");
             pb.redirectErrorStream(true);
             pb.start(); 
         }catch(Exception e){

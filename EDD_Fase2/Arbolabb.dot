@@ -1,0 +1,15 @@
+digraph G{
+
+node [shape = circle]
+node [stile = filled]
+node [fillcolor =" #EEEEE"]
+node [color =" #EEEEE"]
+edge[color =" #31CEF0"]
+10->5->3
+5->8
+
+10->15->14
+15->20
+
+
+}

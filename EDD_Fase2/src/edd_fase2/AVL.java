@@ -6,13 +6,16 @@
 package edd_fase2;
 
 public class AVL {
+    public String contenido;
     public Nodo root;
     public AVL a;
     public class Nodo{
         public Nodo derecha,izquierda;
         public int id,tamaño;
-        public Nodo(int id){
+        public Lista_Capa lista;
+        public Nodo(int id,Lista_Capa lista){
             this.id=id;
+            this.lista=lista;
             this.derecha=null;
             this.izquierda=null;
             tamaño=0; 
@@ -23,22 +26,22 @@ public class AVL {
         root=null;
         
     }
-    public void add(int id){
-        this.root=this._add(id,this.root);
+    public void add(int id,Lista_Capa lista){
+        this.root=this._add(id,lista,this.root);
         
     }
 
     
     
     
-    public Nodo _add(int id,Nodo root){
+    public Nodo _add(int id,Lista_Capa lista,Nodo root){
         if (root == null){
-            Nodo x=new Nodo(id);
+            Nodo x=new Nodo(id,lista);
             return x;
             }
         else{
             if (id < root.id){
-                root.izquierda = this._add(id,root.izquierda);
+                root.izquierda = this._add(id,lista,root.izquierda);
                 if (this.height(root.derecha) - this.height(root.izquierda) == -2){
                     if (id < root.izquierda.id){
                         root = this.SimpleIzq(root);
@@ -49,7 +52,7 @@ public class AVL {
                 }
             }
             else if(id>root.id) {
-                root.derecha = this._add( id, root.derecha);
+                root.derecha = this._add( id,lista, root.derecha);
                 if (this.height(root.derecha) - this.height(root.izquierda) == 2){
                     if (id > root.derecha.id){
                         root = this.SimpleDer(root);
@@ -116,7 +119,7 @@ public class AVL {
     
     // ---------------------------------------------- Funciones para buscar ----------------------------------------------------------
     
-    public Nodo search(int id){
+    public Lista_Capa search(int id){
         if (this.root==null){
             return null;
         }
@@ -125,7 +128,7 @@ public class AVL {
         }
     }
 
-    public Nodo _search(int id, Nodo node){
+    public Lista_Capa _search(int id, Nodo node){
         if (node ==null){
             return null;
         }
@@ -136,7 +139,7 @@ public class AVL {
             return this._search( id, node.derecha );
         }
         else{
-            return node;
+            return node.lista;
         }
     }
 
@@ -150,7 +153,7 @@ public class AVL {
     }
 
     public Nodo _getMin(Nodo node){
-        if (node.izquierda){
+        if (node.izquierda!=null){
             return this._getMin( node.izquierda );
         }
         else{
@@ -168,7 +171,7 @@ public class AVL {
     }
 
     public Nodo _getMax(Nodo node){
-        if (node.derecha){
+        if (node.derecha!=null){
             return this._getMax( node.derecha );
         }
         else{
@@ -212,7 +215,7 @@ public class AVL {
             node.tamaño = this.max_min(this.height(node.izquierda), this.height(node.derecha))  +1;
         }
         
-        else if((node.izquierda) && (node.derecha)) {
+        else if((node.izquierda!=null) && (node.derecha!=null)) {
             if (node.izquierda.tamaño <= node.derecha.tamaño){
                 Nodo minNode = this._getMin(node.derecha);
                 node.id = minNode.id;
@@ -226,7 +229,7 @@ public class AVL {
             node.tamaño = this.max_min(this.height(node.izquierda), this.height(node.derecha)) + 1;
         }
         else{
-            if (node.derecha){
+            if (node.derecha!=null){
                 node = node.derecha;
             }
             else{
@@ -271,6 +274,42 @@ public class AVL {
             this._postorden(root.derecha);
             System.out.println(root.id);
         }
+    }
+    
+    // ------------------------------------------------- GRAFICAR --------------------------------------------------------
+
+    public void preordenG(){
+        this._preordenG(this.root);
+    }
+
+    public void _preordenG(Nodo root){
+        if (root != null){
+            this.contenido += "\n\t\tn" + root.id + " [label = \" "+(root.id) +"\" penwidth=2.5];";
+        
+            if (root.izquierda != null){
+                this.contenido += "\n\t\tn" + (root.id) + " -> n" + (root.izquierda.id) + "[tailport=sw headport=n];";
+            }
+            if (root.derecha !=null){
+                this.contenido += "\n\t\tn" + (root.id) + " -> n" + (root.derecha.id) + "[tailport=se headport=n];";
+            }
+            this._preordenG(root.izquierda);
+            this._preordenG(root.derecha);
+        }
+    }
+
+
+    public void Graficar(){
+        this.contenido = "";
+        this.contenido+= "digraph G\n{\n"
+            +"node[shape=box, style=filled, fillcolor=\"#303F9F\", fontcolor=white, color=\"#0A122A\"];\n"
+            +"splines=false;\n";
+     
+        this.preordenG();
+        this.contenido += "\n\t\tedge[dir=none];";
+        this.contenido += "\n\t\tnode[fillcolor=white, fontcolor=black];";
+
+        this.contenido += "\n\t}";
+        System.out.println(this.contenido);
     }
     
     

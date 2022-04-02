@@ -15,7 +15,7 @@ import org.json.simple.parser.ParseException;
 public class EDD_Fase2 {
     public static Matriz m =new Matriz();
     
-    public static void CargaM(String nombreD){
+    public static void CargaCapas(String nombreD){
         JSONParser parser = new JSONParser();
         
         try{
@@ -55,16 +55,43 @@ public class EDD_Fase2 {
         
         
     }
+    
+    public static void CargaImagenes(String nombreD){
+        
+        JSONParser parser = new JSONParser();
+        
+        try{
+             Object obj = parser.parse(new FileReader(nombreD));
+             JSONArray array = (JSONArray) obj;   
+             for (int i=0;i<array.size();i++){
+                 JSONObject jsonO = (JSONObject) array.get(i);
+                 System.out.println("Id Imagen : " + jsonO.get("id")+"--------------------------------");
+                 JSONArray capas = (JSONArray) jsonO.get("capas");
+                 for (int j = 0; j < capas.size(); j++) {
+                     String x=capas.get(j).toString();
+                     int y=Integer.parseInt(x);
+                     System.out.println(y);
+                     
+                     
+                 }
+                 
+                 
+             }
+             
+             
+             
+    
+            System.out.println("Lectura con exito ");
+            
+        }catch(FileNotFoundException e){
+            System.out.println("No se encontro el documento");}
+        catch(IOException e){}
+        catch(ParseException e){}
+        
+    }
 
     
     public static void main(String[] args) {
-        CargaM("mario.json");
-        Arbolabb x;
-        
-        
-        
-    
-        m.Graficar_Nodo3();
         
     }
     
