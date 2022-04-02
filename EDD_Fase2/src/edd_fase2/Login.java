@@ -20,6 +20,7 @@ public class Login extends javax.swing.JFrame {
     public static LCliente cliente;
     
     public Login(final LCliente clientes) {
+        
         initComponents();
         setLocationRelativeTo(null);
         this.cliente=clientes;
@@ -45,6 +46,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
 
         jButton2.setText("Registrarse");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -125,7 +127,10 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       
+        INCliente inc=new  INCliente ( cliente);
+        inc.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -142,12 +147,15 @@ public class Login extends javax.swing.JFrame {
                 Boolean paso = cliente.Login(jTextField1.getText(), jTextField2.getText());
                 if(paso==true){
                     JOptionPane.showMessageDialog(this, "bienvenido");
+                    Usuarios us=new Usuarios(cliente,jTextField1.getText().toString());
+                    us.setVisible(true);
+                    this.dispose(); 
                     
                 }else{
                     JOptionPane.showMessageDialog(this, "Datos invalidos");
                 }
             }else{
-                JOptionPane.showMessageDialog(this, "No hay clientes registrados");
+                JOptionPane.showMessageDialog(this, "Datos invalidos");
                 
             }
             

@@ -5,10 +5,13 @@
  */
 package edd_fase2;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -79,6 +82,11 @@ public class Admin extends javax.swing.JFrame {
         jButton3.setText("Graficar");
 
         jButton4.setText("Op. Usuario");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -118,7 +126,17 @@ public class Admin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        String nombreD="clientes.json";
+        String nombreD="";
+        JFileChooser fc = new JFileChooser ();
+        FileNameExtensionFilter filtro=new  FileNameExtensionFilter("*.json","json");
+        fc.setFileFilter(filtro);
+        int seleccion = fc.showOpenDialog (this);
+        if (seleccion == JFileChooser. APPROVE_OPTION) {
+            File fichero = fc.getSelectedFile ();
+            nombreD= (fichero.getAbsolutePath ());  
+            }
+        
+        
         JSONParser parser = new JSONParser();
         
         try{
@@ -152,6 +170,12 @@ public class Admin extends javax.swing.JFrame {
         this.dispose();
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        INCliente as=new INCliente(cliente);
+        as.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

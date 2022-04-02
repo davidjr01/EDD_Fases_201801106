@@ -156,6 +156,26 @@ public class LCliente {
         
         
     }
+     
+     public int TamañoCapa(String cliente){
+        Nodo aux = cabecera;
+        int tamaño=0;
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c.equals(cliente)){
+                tamaño=aux.capas.tamaño;
+                aux=null;
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }
+        return tamaño;
+        
+        
+    }
     
     public void Mostrar(){
         if(cabecera == null){

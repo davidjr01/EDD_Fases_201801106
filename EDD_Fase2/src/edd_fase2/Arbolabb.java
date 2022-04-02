@@ -53,6 +53,7 @@ public class Arbolabb {
     public void insert(int valor,Lista_Pixel lista){
         
         this.raiz = this.recorrer_insert(valor,lista, this.raiz);
+        this.tamaño+=1;
     }
     
     NodoABB recorrer_insert(int valor,Lista_Pixel lista,NodoABB raiz){
