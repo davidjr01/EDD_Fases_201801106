@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 
 
 public class Arbolabb {
+    public Lista_Pixel lista2;
     
     public class NodoABB  {
         int valor;
@@ -88,6 +89,71 @@ public class Arbolabb {
         
     
    }
+    
+    
+    public void Inorden(){
+        this.recorrer_inorden(this.raiz);
+    }
+    public void recorrer_inorden(NodoABB nodo){
+        if (nodo.rama_izquierda!=null){
+            recorrer_inorden(nodo.rama_izquierda); 
+        }
+        System.out.println("Valor :"+nodo.valor);
+        if (nodo.rama_derecha!=null){
+            recorrer_inorden(nodo.rama_derecha); 
+        }    
+        
+    }
+    
+
+    
+    
+    
+    public void Postorder(){
+        this.recorrer_postorder(this.raiz);
+    }
+    public void recorrer_postorder(NodoABB nodo){
+        if (nodo.rama_izquierda!=null){
+            recorrer_postorder(nodo.rama_izquierda); 
+        }
+        if (nodo.rama_derecha!=null){
+            recorrer_postorder(nodo.rama_derecha); 
+        }
+        System.out.println("Valor :"+nodo.valor); 
+        
+    }
+    
+    public Lista_Pixel  Buscar(int valor){
+        lista2=null;
+        return recorrer_buscar(this.raiz, valor);
+        
+    }
+    public Lista_Pixel recorrer_buscar(NodoABB nodo,int valor){
+        
+        if (valor == nodo.valor){
+                lista2=nodo.lista;
+        }
+        else if (valor < nodo.valor){
+            if (nodo.rama_izquierda == null){
+                lista2=null;
+            }
+            else{
+                recorrer_buscar( nodo.rama_izquierda,valor);
+            }
+        }
+        else{
+            if (nodo.rama_derecha == null){
+                lista2=null;
+            }
+            else{
+                recorrer_buscar( nodo.rama_izquierda,valor);
+            }
+       }
+       return lista2;
+        
+    }
+    
+    
 
     
     public void Graficar() {

@@ -15,7 +15,7 @@ import org.json.simple.parser.ParseException;
 public class EDD_Fase2 {
     public static Matriz m =new Matriz();
     
-    public static void CargaCapas(String nombreD){
+    public static void CargaCapa(String nombreD){
         JSONParser parser = new JSONParser();
         
         try{
@@ -56,7 +56,7 @@ public class EDD_Fase2 {
         
     }
     
-    public static void CargaImagenes(String nombreD){
+    public static void CargaImagene(String nombreD){
         
         JSONParser parser = new JSONParser();
         
@@ -70,17 +70,36 @@ public class EDD_Fase2 {
                  for (int j = 0; j < capas.size(); j++) {
                      String x=capas.get(j).toString();
                      int y=Integer.parseInt(x);
-                     System.out.println(y);
+                     System.out.println(y);   
                      
-                     
-                 }
-                 
+                 } 
                  
              }
              
-             
-             
+            System.out.println("Lectura con exito ");
+            
+        }catch(FileNotFoundException e){
+            System.out.println("No se encontro el documento");}
+        catch(IOException e){}
+        catch(ParseException e){}
+        
+    }
     
+    public static void CargaCliente(String nombreD){
+        
+        JSONParser parser = new JSONParser();
+        
+        try{
+             Object obj = parser.parse(new FileReader(nombreD));
+             JSONArray array = (JSONArray) obj;   
+             for (int i=0;i<array.size();i++){
+                 JSONObject jsonO = (JSONObject) array.get(i);
+                 System.out.println("Dpi : " + jsonO.get("dpi")+"--------------------------------");
+                 System.out.println("Nombre : " + jsonO.get("nombre_cliente")+"--------------------------------");
+                 System.out.println("Password : " + jsonO.get("password")+"--------------------------------");
+                 
+             }
+             
             System.out.println("Lectura con exito ");
             
         }catch(FileNotFoundException e){
@@ -92,6 +111,8 @@ public class EDD_Fase2 {
 
     
     public static void main(String[] args) {
+        CargaCliente("clientes.json");
+        
         
     }
     

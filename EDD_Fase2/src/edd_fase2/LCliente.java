@@ -95,7 +95,66 @@ public class LCliente {
         
     }
     
-
+    
+    
+    public Boolean Login(String Dpi,String contra){
+        if(cabecera == null){
+            return false;
+        }
+        else{
+            Nodo aux = cabecera;
+            Boolean paso=false;
+            while(aux != null){
+                if ((Dpi==aux.cliente.dpi)&&(contra==aux.cliente.contraseña)){
+                    paso=true;
+                    aux=null;
+                }
+                else{
+                    aux = aux.siguiente;
+                    
+                }
+                
+            }
+            return paso;
+        }  
+    }
+   
+     public void AddCapas(String cliente ,int x,Lista_Pixel lista){
+        Nodo aux = cabecera;
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c==cliente){
+                aux.capas.insert(x,lista);
+                aux=null;
+                
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }     
+    }
+     
+     public Lista_Pixel BuscarCapa(String cliente,int x){
+        Nodo aux = cabecera;
+        Lista_Pixel listac=new Lista_Pixel();
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c==cliente){
+                listac=aux.capas.Buscar(x);
+                aux=null;
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }
+        return listac;
+        
+        
+    }
     
     public void Mostrar(){
         if(cabecera == null){
@@ -105,7 +164,7 @@ public class LCliente {
             Nodo aux = cabecera;
             int c=0;
             while(aux != null){
-                System.out.println(aux.valor);
+                System.out.println(aux.cliente.nombre);
                 aux = aux.siguiente;
             }
         }
