@@ -5,6 +5,15 @@
  */
 package edd_fase2;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import javax.swing.JOptionPane;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 /**
  *
  * @author david
@@ -14,8 +23,12 @@ public class Admin extends javax.swing.JFrame {
     /**
      * Creates new form Admin
      */
-    public Admin() {
+    public static LCliente cliente=new LCliente();
+    public Admin(final LCliente clientes) {
         initComponents();
+        setLocationRelativeTo(null);
+        this.cliente=clientes;
+       // JOptionPane.showMessageDialog(this, "a");
     }
 
     /**
@@ -36,6 +49,11 @@ public class Admin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("Cerrar sesion");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jPanel1.setBackground(java.awt.Color.white);
         jPanel1.setToolTipText("");
@@ -52,6 +70,11 @@ public class Admin extends javax.swing.JFrame {
         );
 
         jButton2.setText("Carga Msiva");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Graficar");
 
@@ -94,6 +117,42 @@ public class Admin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String nombreD="clientes.json";
+        JSONParser parser = new JSONParser();
+        
+        try{
+             Object obj = parser.parse(new FileReader(nombreD));
+             JSONArray array = (JSONArray) obj;   
+             AVL avl=new AVL();
+             Arbolabb abb=new Arbolabb();
+             for (int i=0;i<array.size();i++){  
+                 JSONObject jsonO = (JSONObject) array.get(i);
+                 String dpi=jsonO.get("dpi").toString();
+                 String nombre=jsonO.get("nombre_cliente").toString();
+                 String passw=jsonO.get("password").toString();
+                 OCliente oc=new OCliente(dpi,nombre,passw);
+                 cliente.InsertarFinal(oc, avl, abb);
+               
+             }
+             
+            JOptionPane.showMessageDialog(this, "Lectura con exito");
+            
+        }catch(FileNotFoundException e){
+            JOptionPane.showMessageDialog(this, "No se encontro el documento");
+        }
+        catch(IOException e){}
+        catch(ParseException e){}
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Login log =new Login(cliente);
+        log.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -124,7 +183,7 @@ public class Admin extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Admin().setVisible(true);
+               
             }
         });
     }

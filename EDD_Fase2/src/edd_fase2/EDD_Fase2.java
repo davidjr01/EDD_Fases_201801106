@@ -14,6 +14,7 @@ import org.json.simple.parser.ParseException;
 
 public class EDD_Fase2 {
     public static Matriz m =new Matriz();
+    public static LCliente cliente=new LCliente();
     
     public static void CargaCapa(String nombreD){
         JSONParser parser = new JSONParser();
@@ -111,7 +112,8 @@ public class EDD_Fase2 {
 
     
     public static void main(String[] args) {
-        CargaCliente("clientes.json");
+       Login login =new Login(cliente);
+       login.setVisible(true);
         
         
     }

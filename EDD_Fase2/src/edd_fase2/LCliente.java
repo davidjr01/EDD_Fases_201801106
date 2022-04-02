@@ -2,7 +2,7 @@
 package edd_fase2;
 
 public class LCliente {
-    private Nodo cabecera;
+    public Nodo cabecera;
     private int tamanio=0;
    
     
@@ -45,7 +45,7 @@ public class LCliente {
         Nodo aux = cabecera;
         while(aux != null){
             String c=aux.cliente.dpi;
-            if (c==cliente){
+            if (c.equals(cliente)){
                 aux.imagenes.add(x,lista);
                 aux=null;
                 
@@ -62,7 +62,7 @@ public class LCliente {
         Nodo aux = cabecera;
         while(aux != null){
             String c=aux.cliente.dpi;
-            if (c==cliente){
+            if (c.equals(cliente)){
                 aux.imagenes.delete(x);
                 aux=null;
             }
@@ -80,7 +80,7 @@ public class LCliente {
         Lista_Capa listac=new Lista_Capa();
         while(aux != null){
             String c=aux.cliente.dpi;
-            if (c==cliente){
+            if (c.equals(cliente)){
                 listac=aux.imagenes.search(x);
                 aux=null;
             }
@@ -105,7 +105,8 @@ public class LCliente {
             Nodo aux = cabecera;
             Boolean paso=false;
             while(aux != null){
-                if ((Dpi==aux.cliente.dpi)&&(contra==aux.cliente.contraseña)){
+                
+                if ((Dpi.equals(aux.cliente.dpi))&&(contra.equals(aux.cliente.contraseña))){
                     paso=true;
                     aux=null;
                 }
@@ -123,7 +124,7 @@ public class LCliente {
         Nodo aux = cabecera;
         while(aux != null){
             String c=aux.cliente.dpi;
-            if (c==cliente){
+            if (c.equals(cliente)){
                 aux.capas.insert(x,lista);
                 aux=null;
                 
@@ -141,7 +142,7 @@ public class LCliente {
         Lista_Pixel listac=new Lista_Pixel();
         while(aux != null){
             String c=aux.cliente.dpi;
-            if (c==cliente){
+            if (c.equals(cliente)){
                 listac=aux.capas.Buscar(x);
                 aux=null;
             }

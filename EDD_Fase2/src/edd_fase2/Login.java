@@ -5,6 +5,8 @@
  */
 package edd_fase2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author david
@@ -14,9 +16,17 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
-    public Login() {
+    public static String x;
+    public static LCliente cliente;
+    
+    public Login(final LCliente clientes) {
         initComponents();
+        setLocationRelativeTo(null);
+        this.cliente=clientes;
+       
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -37,10 +47,34 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton2.setText("Registrarse");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Siguiente");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jTextField1.setName("usuariotxt"); // NOI18N
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Usuario");
+
+        jTextField2.setName(""); // NOI18N
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Password");
 
@@ -90,6 +124,45 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    
+        
+        if((jTextField1.getText().equals("admin"))&& (jTextField2.getText().equals("EDD2022"))){
+            Admin a=new Admin(cliente);
+            a.setVisible(true);
+            this.dispose();
+            
+        }
+        else{
+            if(cliente.cabecera!=null){
+                Boolean paso = cliente.Login(jTextField1.getText(), jTextField2.getText());
+                if(paso==true){
+                    JOptionPane.showMessageDialog(this, "bienvenido");
+                    
+                }else{
+                    JOptionPane.showMessageDialog(this, "Datos invalidos");
+                }
+            }else{
+                JOptionPane.showMessageDialog(this, "No hay clientes registrados");
+                
+            }
+            
+            
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -120,7 +193,7 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                
             }
         });
     }
