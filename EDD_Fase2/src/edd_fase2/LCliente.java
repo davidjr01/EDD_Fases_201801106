@@ -280,7 +280,8 @@ public class LCliente {
   
         
     }
-    public void Mostrar(){
+    public Boolean Verificar(String Dpi){
+        Boolean x =false;
         if(cabecera == null){
             System.err.print("La lista se encuentra vacia");
         }
@@ -288,10 +289,17 @@ public class LCliente {
             Nodo aux = cabecera;
             int c=0;
             while(aux != null){
-                System.out.println(aux.cliente.nombre);
-                aux = aux.siguiente;
+                
+                if(Dpi.equals(aux.cliente.dpi)){
+                    x=true;
+                    aux=null;
+                }else{
+                    aux = aux.siguiente;
+                }
+                
             }
         }
+        return x;
     }
       
     

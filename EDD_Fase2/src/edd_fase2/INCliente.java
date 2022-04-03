@@ -125,12 +125,23 @@ public class INCliente extends javax.swing.JFrame {
         String dpi=dpitxt.getText();
         String nombre=nombretxt.getText();
         String passw=passwtxt.getText();
+        
+        if(cliente.Verificar(dpi)==true){
+            JOptionPane.showMessageDialog(this, "DPi o Usuario ya se enceuntra registrado");
+            dpitxt.setText("");
+            nombretxt.setText("");
+            passwtxt.setText("");
+              
+        } else{
         OCliente oc=new OCliente(dpi,nombre,passw);
         cliente.InsertarFinal(oc, avl, abb);
         Login log=new Login(cliente);
         JOptionPane.showMessageDialog(this, "Usuario Registado");
         log.setVisible(true);
         this.dispose();
+            
+        }
+        
           
     }//GEN-LAST:event_jButton1ActionPerformed
 
