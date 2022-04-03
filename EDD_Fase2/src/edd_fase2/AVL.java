@@ -5,10 +5,15 @@
  */
 package edd_fase2;
 
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
 public class AVL {
     public String contenido;
     public Nodo root;
     public AVL a;
+    public Lista_Capa lsc1;
+    public Lista_Capa listapasa;
     public class Nodo{
         public Nodo derecha,izquierda;
         public int id,tamaño;
@@ -120,26 +125,29 @@ public class AVL {
     // ---------------------------------------------- Funciones para buscar ----------------------------------------------------------
     
     public Lista_Capa search(int id){
+        Lista_Capa s=new Lista_Capa();
+        listapasa=s;
         if (this.root==null){
-            return null;
+            
         }
         else{
-            return this._search(id, this.root);
+             this._search(id, this.root);
         }
+        return listapasa;
     }
 
-    public Lista_Capa _search(int id, Nodo node){
+    public void _search(int id, Nodo node){
         if (node ==null){
-            return null;
+            
         }
         else if(id < node.id){
-            return this._search( id, node.izquierda );
+           this._search( id, node.izquierda );
         }
         else if ( id > node.id){
-            return this._search( id, node.derecha );
+            this._search( id, node.derecha );
         }
         else{
-            return node.lista;
+            listapasa= node.lista;
         }
     }
 
@@ -253,16 +261,35 @@ public class AVL {
         }
     }
     
-    public void inorden(){
+    public  void inorden(){
+        
         this._inorden(this.root);
      }
+    
     public void _inorden(Nodo root){
         if (root !=null){
             this._inorden(root.izquierda);
-            System.out.println(root.id);
+            lsc1.InsertarFinal(root.id);
             this._inorden(root.derecha);
         }
+        
     } 
+    
+    
+    public  void inorden2(){
+        
+        this._inorden2(this.root);
+     }
+    
+    public void _inorden2(Nodo root){
+        if (root !=null){
+            this._inorden2(root.izquierda);
+            lsc1.InsertarFinal(root.id);
+            this._inorden2(root.derecha);
+        }
+        
+    }
+    
 
     public void postorden(){
         this._postorden(this.root);
@@ -274,6 +301,13 @@ public class AVL {
             this._postorden(root.derecha);
             System.out.println(root.id);
         }
+    }
+    
+    public Lista_Capa ObtenerId(){
+        Lista_Capa au2=new Lista_Capa();
+        lsc1=au2;
+        inorden();
+        return lsc1;
     }
     
     // ------------------------------------------------- GRAFICAR --------------------------------------------------------
@@ -309,7 +343,33 @@ public class AVL {
         this.contenido += "\n\t\tnode[fillcolor=white, fontcolor=black];";
 
         this.contenido += "\n\t}";
-        System.out.println(this.contenido);
+        
+        
+        FileWriter fw=null;
+        PrintWriter pw=null;
+        try{
+            fw=new FileWriter("ArbolAVL.dot");
+            pw=new PrintWriter(fw);
+            pw.write(this.contenido);
+            pw.close();
+            fw.close();
+        
+        }catch(Exception ex){
+        System.out.println(ex.getMessage());
+         }finally{
+            if (pw!=null)
+                pw.close();
+        }
+        
+        try{
+            ProcessBuilder pb;
+            pb=new ProcessBuilder("dot","-Tpng","ArbolAVL.dot","-o","ArbolAVL.png");
+            pb.redirectErrorStream(true);
+            pb.start(); 
+        }catch(Exception e){
+         e.printStackTrace();
+        }
+        
     }
     
     

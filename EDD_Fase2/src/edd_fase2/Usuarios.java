@@ -128,6 +128,11 @@ public class Usuarios extends javax.swing.JFrame {
         });
 
         jButton5.setText("Arbol de imagenes");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Por Capa");
 
@@ -181,6 +186,11 @@ public class Usuarios extends javax.swing.JFrame {
         });
 
         jButton9.setText("Arbol de capas(ABB)");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setText("Ver capa");
 
@@ -355,19 +365,20 @@ public class Usuarios extends javax.swing.JFrame {
              Object obj = parser.parse(new FileReader(nombreD));
              JSONArray array = (JSONArray) obj;   
              for (int i=0;i<array.size();i++){
+                 Lista_Capa lc=new Lista_Capa();
                  JSONObject jsonO = (JSONObject) array.get(i);
                  idimagen =Integer.parseInt(jsonO.get("id").toString());
                  JSONArray capas = (JSONArray) jsonO.get("capas");
                  for (int j = 0; j < capas.size(); j++) {
-                     String x=capas.get(j).toString();
-                     int y=Integer.parseInt(x);
-                     lista.InsertarFinal(y);
+                     
+                     lc.InsertarFinal(Integer.parseInt(capas.get(j).toString()));
                  }
-                 cliente.AddImagen(ndpi, idimagen, lista);
                  
+                 cliente.AddImagen(ndpi, idimagen, lc);
+              
              }
              
-            System.out.println("Lectura con exito ");
+            JOptionPane.showMessageDialog(this, "Lectura con exito ");
             
         }catch(FileNotFoundException e){
             System.out.println("No se encontro el documento");}
@@ -380,8 +391,23 @@ public class Usuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
+        ArbolAVL avla=new ArbolAVL (cliente,ndpi);
+        avla.setVisible(true);
+        this.dispose(); 
     }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        ArbolImagen ai=new ArbolImagen(cliente,ndpi);
+        ai.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        ArbolBBB aavl=new ArbolBBB(cliente,ndpi);
+        aavl.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments

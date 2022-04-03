@@ -1,0 +1,15 @@
+digraph G
+{
+node[shape=box, style=filled, fillcolor="#303F9F", fontcolor=white, color="#0A122A"];
+splines=false;
+
+		n5 [label = " 5" penwidth=2.5];
+		n5 -> n3[tailport=sw headport=n];
+		n5 -> n9[tailport=se headport=n];
+		n3 [label = " 3" penwidth=2.5];
+		n3 -> n1[tailport=sw headport=n];
+		n1 [label = " 1" penwidth=2.5];
+		n9 [label = " 9" penwidth=2.5];
+		edge[dir=none];
+		node[fillcolor=white, fontcolor=black];
+	}

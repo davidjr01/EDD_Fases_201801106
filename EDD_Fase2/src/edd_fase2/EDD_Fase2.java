@@ -63,7 +63,8 @@ public class EDD_Fase2 {
         
         try{
              Object obj = parser.parse(new FileReader(nombreD));
-             JSONArray array = (JSONArray) obj;   
+             JSONArray array = (JSONArray) obj;  
+             
              for (int i=0;i<array.size();i++){
                  JSONObject jsonO = (JSONObject) array.get(i);
                  System.out.println("Id Imagen : " + jsonO.get("id")+"--------------------------------");

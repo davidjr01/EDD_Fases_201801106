@@ -273,7 +273,7 @@ public class R_Limitado extends javax.swing.JFrame {
                     for (int ij=1;ij<=lss2;ij++){
                         Pixel pix=new Pixel();
                         pix=lsta21.DevolverValor(ij);
-                        System.out.println(pix.fila);
+                        
                         if( m.verificarExiste(pix.columna,pix.fila)){
                             m.Actualizar(pix.columna,pix.fila, pix.color);
                         }

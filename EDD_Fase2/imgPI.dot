@@ -43,11 +43,6 @@ n3c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
 n3c1[label="",group=2,style="filled", color="#000000", fillcolor="#000000"]
 n3c2[label="",group=3,style="filled", color="#000000", fillcolor="#000000"]
 n3c3[label="",group=4,style="filled", color="#000000", fillcolor="#000000"]
-n3c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n3c5[label="",group=6,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n3c6[label="",group=7,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n3c7[label="",group=8,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n3c8[label="",group=9,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n3c9[label="",group=10,style="filled", color="#000000", fillcolor="#000000"]
 n3c10[label="",group=11,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n3c11[label="",group=12,style="filled", color="#000000", fillcolor="#000000"]
@@ -58,14 +53,6 @@ n3c24[label="",group=25,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n3c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n3c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n4c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n4c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n4c2[label="",group=3,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n4c3[label="",group=4,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n4c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n4c5[label="",group=6,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n4c6[label="",group=7,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n4c7[label="",group=8,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n4c8[label="",group=9,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n4c10[label="",group=11,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n4c11[label="",group=12,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n4c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
@@ -79,10 +66,6 @@ n4c24[label="",group=25,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n4c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n4c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n5c1[label="",group=2,style="filled", color="#000000", fillcolor="#000000"]
-n5c2[label="",group=3,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n5c3[label="",group=4,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n5c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n5c5[label="",group=6,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n5c7[label="",group=8,style="filled", color="#000000", fillcolor="#000000"]
 n5c8[label="",group=9,style="filled", color="#000000", fillcolor="#000000"]
 n5c9[label="",group=10,style="filled", color="#000000", fillcolor="#000000"]
@@ -100,9 +83,6 @@ n5c24[label="",group=25,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n5c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n5c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n6c1[label="",group=2,style="filled", color="#000000", fillcolor="#000000"]
-n6c2[label="",group=3,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n6c3[label="",group=4,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n6c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n6c11[label="",group=12,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n6c12[label="",group=13,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n6c13[label="",group=14,style="filled", color="#000000", fillcolor="#000000"]
@@ -119,14 +99,9 @@ n6c24[label="",group=25,style="filled", color="#000000", fillcolor="#000000"]
 n6c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n6c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n7c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n7c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n7c2[label="",group=3,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n7c3[label="",group=4,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n7c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n7c11[label="",group=12,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n7c12[label="",group=13,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n7c13[label="",group=14,style="filled", color="#000000", fillcolor="#000000"]
-n7c14[label="",group=15,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n7c15[label="",group=16,style="filled", color="#000000", fillcolor="#000000"]
 n7c18[label="",group=19,style="filled", color="#000000", fillcolor="#000000"]
 n7c19[label="",group=20,style="filled", color="#000000", fillcolor="#000000"]
@@ -138,12 +113,6 @@ n7c24[label="",group=25,style="filled", color="#000000", fillcolor="#000000"]
 n7c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n7c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n8c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n8c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n8c2[label="",group=3,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n8c3[label="",group=4,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n8c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n8c5[label="",group=6,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n8c9[label="",group=10,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n8c10[label="",group=11,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n8c11[label="",group=12,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n8c12[label="",group=13,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
@@ -154,15 +123,6 @@ n8c24[label="",group=25,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n8c25[label="",group=26,style="filled", color="#000000", fillcolor="#000000"]
 n8c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n9c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n9c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n9c2[label="",group=3,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n9c3[label="",group=4,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n9c4[label="",group=5,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n9c5[label="",group=6,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n9c6[label="",group=7,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n9c7[label="",group=8,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n9c8[label="",group=9,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n9c9[label="",group=10,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n9c10[label="",group=11,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n9c11[label="",group=12,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n9c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
@@ -175,17 +135,7 @@ n9c24[label="",group=25,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n9c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n9c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n10c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n10c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n10c2[label="",group=3,style="filled", color="#0000FF", fillcolor="#0000FF"]
 n10c3[label="",group=4,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
-n10c4[label="",group=5,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n10c5[label="",group=6,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n10c6[label="",group=7,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n10c7[label="",group=8,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n10c8[label="",group=9,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n10c9[label="",group=10,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n10c10[label="",group=11,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n10c11[label="",group=12,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n10c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
 n10c13[label="",group=14,style="filled", color="#000000", fillcolor="#000000"]
 n10c14[label="",group=15,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
@@ -196,17 +146,9 @@ n10c24[label="",group=25,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n10c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n10c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n11c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n11c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n11c2[label="",group=3,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n11c3[label="",group=4,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
 n11c4[label="",group=5,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
-n11c5[label="",group=6,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n11c6[label="",group=7,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n11c7[label="",group=8,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n11c8[label="",group=9,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n11c9[label="",group=10,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n11c10[label="",group=11,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n11c11[label="",group=12,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n11c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
 n11c14[label="",group=15,style="filled", color="#000000", fillcolor="#000000"]
 n11c15[label="",group=16,style="filled", color="#FFFF9F", fillcolor="#FFFF9F"]
@@ -218,17 +160,9 @@ n11c24[label="",group=25,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n11c25[label="",group=26,style="filled", color="#FF0000", fillcolor="#FF0000"]
 n11c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n12c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n12c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n12c2[label="",group=3,style="filled", color="#000000", fillcolor="#000000"]
 n12c3[label="",group=4,style="filled", color="#000000", fillcolor="#000000"]
 n12c4[label="",group=5,style="filled", color="#000000", fillcolor="#000000"]
-n12c5[label="",group=6,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n12c6[label="",group=7,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n12c7[label="",group=8,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n12c8[label="",group=9,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n12c9[label="",group=10,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n12c10[label="",group=11,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n12c11[label="",group=12,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n12c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
 n12c15[label="",group=16,style="filled", color="#000000", fillcolor="#000000"]
 n12c16[label="",group=17,style="filled", color="#000000", fillcolor="#000000"]
@@ -237,57 +171,27 @@ n12c24[label="",group=25,style="filled", color="#000000", fillcolor="#000000"]
 n12c25[label="",group=26,style="filled", color="#000000", fillcolor="#000000"]
 n12c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n13c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n13c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n13c2[label="",group=3,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n13c3[label="",group=4,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n13c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n13c5[label="",group=6,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n13c6[label="",group=7,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n13c7[label="",group=8,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n13c8[label="",group=9,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n13c9[label="",group=10,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n13c10[label="",group=11,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n13c11[label="",group=12,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n13c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
 n13c25[label="",group=26,style="filled", color="#000000", fillcolor="#000000"]
 n13c26[label="",group=27,style="filled", color="#000000", fillcolor="#000000"]
 n14c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n14c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n14c2[label="",group=3,style="filled", color="#0000FF", fillcolor="#0000FF"]
-n14c3[label="",group=4,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n14c4[label="",group=5,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n14c5[label="",group=6,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n14c6[label="",group=7,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n14c7[label="",group=8,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
+n14c5[label="",group=6,style="filled", color="#000000", fillcolor="#000000"]
 n14c8[label="",group=9,style="filled", color="#000000", fillcolor="#000000"]
-n14c9[label="",group=10,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n14c10[label="",group=11,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n14c11[label="",group=12,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n14c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
 n15c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n15c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n15c2[label="",group=3,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n15c3[label="",group=4,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n15c4[label="",group=5,style="filled", color="#000000", fillcolor="#000000"]
 n15c6[label="",group=7,style="filled", color="#000000", fillcolor="#000000"]
-n15c7[label="",group=8,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n15c8[label="",group=9,style="filled", color="#000000", fillcolor="#000000"]
 n15c9[label="",group=10,style="filled", color="#000000", fillcolor="#000000"]
-n15c10[label="",group=11,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n15c11[label="",group=12,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n15c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
 n16c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n16c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
-n16c2[label="",group=3,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n16c3[label="",group=4,style="filled", color="#000000", fillcolor="#000000"]
 n16c7[label="",group=8,style="filled", color="#000000", fillcolor="#000000"]
 n16c8[label="",group=9,style="filled", color="#000000", fillcolor="#000000"]
 n16c9[label="",group=10,style="filled", color="#000000", fillcolor="#000000"]
 n16c10[label="",group=11,style="filled", color="#000000", fillcolor="#000000"]
-n16c11[label="",group=12,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n16c12[label="",group=13,style="filled", color="#000000", fillcolor="#000000"]
 n17c0[label="",group=1,style="filled", color="#000000", fillcolor="#000000"]
-n17c1[label="",group=2,style="filled", color="#0B1FCB", fillcolor="#0B1FCB"]
 n17c2[label="",group=3,style="filled", color="#000000", fillcolor="#000000"]
 n17c8[label="",group=9,style="filled", color="#000000", fillcolor="#000000"]
 n17c11[label="",group=12,style="filled", color="#000000", fillcolor="#000000"]
@@ -300,42 +204,42 @@ INICIO->X0->X1->X2->X3->X4->X5->X6->X7->X8->X9->X10->X11->X12->X13->X14->X15->X1
 {rank = same;X0,n0c25,n0c26};
 {rank = same;X1,n1c9,n1c24,n1c25,n1c26};
 {rank = same;X2,n2c4,n2c7,n2c8,n2c9,n2c10,n2c15,n2c16,n2c23,n2c24,n2c25,n2c26};
-{rank = same;X3,n3c0,n3c1,n3c2,n3c3,n3c4,n3c5,n3c6,n3c7,n3c8,n3c9,n3c10,n3c11,n3c14,n3c17,n3c23,n3c24,n3c25,n3c26};
-{rank = same;X4,n4c0,n4c1,n4c2,n4c3,n4c4,n4c5,n4c6,n4c7,n4c8,n4c10,n4c11,n4c12,n4c14,n4c15,n4c16,n4c18,n4c22,n4c23,n4c24,n4c25,n4c26};
-{rank = same;X5,n5c1,n5c2,n5c3,n5c4,n5c5,n5c7,n5c8,n5c9,n5c11,n5c12,n5c13,n5c14,n5c15,n5c16,n5c17,n5c18,n5c21,n5c23,n5c24,n5c25,n5c26};
-{rank = same;X6,n6c1,n6c2,n6c3,n6c4,n6c11,n6c12,n6c13,n6c14,n6c15,n6c16,n6c17,n6c18,n6c19,n6c20,n6c21,n6c23,n6c24,n6c25,n6c26};
-{rank = same;X7,n7c0,n7c1,n7c2,n7c3,n7c4,n7c11,n7c12,n7c13,n7c14,n7c15,n7c18,n7c19,n7c20,n7c21,n7c22,n7c23,n7c24,n7c25,n7c26};
-{rank = same;X8,n8c0,n8c1,n8c2,n8c3,n8c4,n8c5,n8c9,n8c10,n8c11,n8c12,n8c13,n8c14,n8c19,n8c24,n8c25,n8c26};
-{rank = same;X9,n9c0,n9c1,n9c2,n9c3,n9c4,n9c5,n9c6,n9c7,n9c8,n9c9,n9c10,n9c11,n9c12,n9c13,n9c14,n9c19,n9c20,n9c21,n9c24,n9c25,n9c26};
-{rank = same;X10,n10c0,n10c1,n10c2,n10c3,n10c4,n10c5,n10c6,n10c7,n10c8,n10c9,n10c10,n10c11,n10c12,n10c13,n10c14,n10c15,n10c18,n10c21,n10c24,n10c25,n10c26};
-{rank = same;X11,n11c0,n11c1,n11c2,n11c3,n11c4,n11c5,n11c6,n11c7,n11c8,n11c9,n11c10,n11c11,n11c12,n11c14,n11c15,n11c16,n11c17,n11c22,n11c23,n11c24,n11c25,n11c26};
-{rank = same;X12,n12c0,n12c1,n12c2,n12c3,n12c4,n12c5,n12c6,n12c7,n12c8,n12c9,n12c10,n12c11,n12c12,n12c15,n12c16,n12c23,n12c24,n12c25,n12c26};
-{rank = same;X13,n13c0,n13c1,n13c2,n13c3,n13c4,n13c5,n13c6,n13c7,n13c8,n13c9,n13c10,n13c11,n13c12,n13c25,n13c26};
-{rank = same;X14,n14c0,n14c1,n14c2,n14c3,n14c4,n14c5,n14c6,n14c7,n14c8,n14c9,n14c10,n14c11,n14c12};
-{rank = same;X15,n15c0,n15c1,n15c2,n15c3,n15c4,n15c6,n15c7,n15c8,n15c9,n15c10,n15c11,n15c12};
-{rank = same;X16,n16c0,n16c1,n16c2,n16c3,n16c7,n16c8,n16c9,n16c10,n16c11,n16c12};
-{rank = same;X17,n17c0,n17c1,n17c2,n17c8,n17c11,n17c12};
+{rank = same;X3,n3c0,n3c1,n3c2,n3c3,n3c9,n3c10,n3c11,n3c14,n3c17,n3c23,n3c24,n3c25,n3c26};
+{rank = same;X4,n4c0,n4c10,n4c11,n4c12,n4c14,n4c15,n4c16,n4c18,n4c22,n4c23,n4c24,n4c25,n4c26};
+{rank = same;X5,n5c1,n5c7,n5c8,n5c9,n5c11,n5c12,n5c13,n5c14,n5c15,n5c16,n5c17,n5c18,n5c21,n5c23,n5c24,n5c25,n5c26};
+{rank = same;X6,n6c1,n6c11,n6c12,n6c13,n6c14,n6c15,n6c16,n6c17,n6c18,n6c19,n6c20,n6c21,n6c23,n6c24,n6c25,n6c26};
+{rank = same;X7,n7c0,n7c11,n7c12,n7c13,n7c15,n7c18,n7c19,n7c20,n7c21,n7c22,n7c23,n7c24,n7c25,n7c26};
+{rank = same;X8,n8c0,n8c10,n8c11,n8c12,n8c13,n8c14,n8c19,n8c24,n8c25,n8c26};
+{rank = same;X9,n9c0,n9c10,n9c11,n9c12,n9c13,n9c14,n9c19,n9c20,n9c21,n9c24,n9c25,n9c26};
+{rank = same;X10,n10c0,n10c3,n10c12,n10c13,n10c14,n10c15,n10c18,n10c21,n10c24,n10c25,n10c26};
+{rank = same;X11,n11c0,n11c2,n11c3,n11c4,n11c12,n11c14,n11c15,n11c16,n11c17,n11c22,n11c23,n11c24,n11c25,n11c26};
+{rank = same;X12,n12c0,n12c2,n12c3,n12c4,n12c12,n12c15,n12c16,n12c23,n12c24,n12c25,n12c26};
+{rank = same;X13,n13c0,n13c12,n13c25,n13c26};
+{rank = same;X14,n14c0,n14c5,n14c8,n14c12};
+{rank = same;X15,n15c0,n15c4,n15c6,n15c8,n15c9,n15c12};
+{rank = same;X16,n16c0,n16c3,n16c7,n16c8,n16c9,n16c10,n16c12};
+{rank = same;X17,n17c0,n17c2,n17c8,n17c11,n17c12};
 {rank = same;X18,n18c1,n18c8,n18c12};
 {rank = same;X19,n19c12};
 edge[ dir="both"]; 
 X0->n0c25->n0c26
 X1->n1c9->n1c24->n1c25->n1c26
 X2->n2c4->n2c7->n2c8->n2c9->n2c10->n2c15->n2c16->n2c23->n2c24->n2c25->n2c26
-X3->n3c0->n3c1->n3c2->n3c3->n3c4->n3c5->n3c6->n3c7->n3c8->n3c9->n3c10->n3c11->n3c14->n3c17->n3c23->n3c24->n3c25->n3c26
-X4->n4c0->n4c1->n4c2->n4c3->n4c4->n4c5->n4c6->n4c7->n4c8->n4c10->n4c11->n4c12->n4c14->n4c15->n4c16->n4c18->n4c22->n4c23->n4c24->n4c25->n4c26
-X5->n5c1->n5c2->n5c3->n5c4->n5c5->n5c7->n5c8->n5c9->n5c11->n5c12->n5c13->n5c14->n5c15->n5c16->n5c17->n5c18->n5c21->n5c23->n5c24->n5c25->n5c26
-X6->n6c1->n6c2->n6c3->n6c4->n6c11->n6c12->n6c13->n6c14->n6c15->n6c16->n6c17->n6c18->n6c19->n6c20->n6c21->n6c23->n6c24->n6c25->n6c26
-X7->n7c0->n7c1->n7c2->n7c3->n7c4->n7c11->n7c12->n7c13->n7c14->n7c15->n7c18->n7c19->n7c20->n7c21->n7c22->n7c23->n7c24->n7c25->n7c26
-X8->n8c0->n8c1->n8c2->n8c3->n8c4->n8c5->n8c9->n8c10->n8c11->n8c12->n8c13->n8c14->n8c19->n8c24->n8c25->n8c26
-X9->n9c0->n9c1->n9c2->n9c3->n9c4->n9c5->n9c6->n9c7->n9c8->n9c9->n9c10->n9c11->n9c12->n9c13->n9c14->n9c19->n9c20->n9c21->n9c24->n9c25->n9c26
-X10->n10c0->n10c1->n10c2->n10c3->n10c4->n10c5->n10c6->n10c7->n10c8->n10c9->n10c10->n10c11->n10c12->n10c13->n10c14->n10c15->n10c18->n10c21->n10c24->n10c25->n10c26
-X11->n11c0->n11c1->n11c2->n11c3->n11c4->n11c5->n11c6->n11c7->n11c8->n11c9->n11c10->n11c11->n11c12->n11c14->n11c15->n11c16->n11c17->n11c22->n11c23->n11c24->n11c25->n11c26
-X12->n12c0->n12c1->n12c2->n12c3->n12c4->n12c5->n12c6->n12c7->n12c8->n12c9->n12c10->n12c11->n12c12->n12c15->n12c16->n12c23->n12c24->n12c25->n12c26
-X13->n13c0->n13c1->n13c2->n13c3->n13c4->n13c5->n13c6->n13c7->n13c8->n13c9->n13c10->n13c11->n13c12->n13c25->n13c26
-X14->n14c0->n14c1->n14c2->n14c3->n14c4->n14c5->n14c6->n14c7->n14c8->n14c9->n14c10->n14c11->n14c12
-X15->n15c0->n15c1->n15c2->n15c3->n15c4->n15c6->n15c7->n15c8->n15c9->n15c10->n15c11->n15c12
-X16->n16c0->n16c1->n16c2->n16c3->n16c7->n16c8->n16c9->n16c10->n16c11->n16c12
-X17->n17c0->n17c1->n17c2->n17c8->n17c11->n17c12
+X3->n3c0->n3c1->n3c2->n3c3->n3c9->n3c10->n3c11->n3c14->n3c17->n3c23->n3c24->n3c25->n3c26
+X4->n4c0->n4c10->n4c11->n4c12->n4c14->n4c15->n4c16->n4c18->n4c22->n4c23->n4c24->n4c25->n4c26
+X5->n5c1->n5c7->n5c8->n5c9->n5c11->n5c12->n5c13->n5c14->n5c15->n5c16->n5c17->n5c18->n5c21->n5c23->n5c24->n5c25->n5c26
+X6->n6c1->n6c11->n6c12->n6c13->n6c14->n6c15->n6c16->n6c17->n6c18->n6c19->n6c20->n6c21->n6c23->n6c24->n6c25->n6c26
+X7->n7c0->n7c11->n7c12->n7c13->n7c15->n7c18->n7c19->n7c20->n7c21->n7c22->n7c23->n7c24->n7c25->n7c26
+X8->n8c0->n8c10->n8c11->n8c12->n8c13->n8c14->n8c19->n8c24->n8c25->n8c26
+X9->n9c0->n9c10->n9c11->n9c12->n9c13->n9c14->n9c19->n9c20->n9c21->n9c24->n9c25->n9c26
+X10->n10c0->n10c3->n10c12->n10c13->n10c14->n10c15->n10c18->n10c21->n10c24->n10c25->n10c26
+X11->n11c0->n11c2->n11c3->n11c4->n11c12->n11c14->n11c15->n11c16->n11c17->n11c22->n11c23->n11c24->n11c25->n11c26
+X12->n12c0->n12c2->n12c3->n12c4->n12c12->n12c15->n12c16->n12c23->n12c24->n12c25->n12c26
+X13->n13c0->n13c12->n13c25->n13c26
+X14->n14c0->n14c5->n14c8->n14c12
+X15->n15c0->n15c4->n15c6->n15c8->n15c9->n15c12
+X16->n16c0->n16c3->n16c7->n16c8->n16c9->n16c10->n16c12
+X17->n17c0->n17c2->n17c8->n17c11->n17c12
 X18->n18c1->n18c8->n18c12
 X19->n19c12
 edge[dir="forward"]; 
@@ -373,20 +277,20 @@ Y26[label="Y=26",group=27]
 INICIO->Y0->Y1->Y2->Y3->Y4->Y5->Y6->Y7->Y8->Y9->Y10->Y11->Y12->Y13->Y14->Y15->Y16->Y17->Y18->Y19->Y20->Y21->Y22->Y23->Y24->Y25->Y26
 edge[ dir="both"]; 
 Y0->n3c0->n4c0->n7c0->n8c0->n9c0->n10c0->n11c0->n12c0->n13c0->n14c0->n15c0->n16c0->n17c0
-Y1->n3c1->n4c1->n5c1->n6c1->n7c1->n8c1->n9c1->n10c1->n11c1->n12c1->n13c1->n14c1->n15c1->n16c1->n17c1->n18c1
-Y2->n3c2->n4c2->n5c2->n6c2->n7c2->n8c2->n9c2->n10c2->n11c2->n12c2->n13c2->n14c2->n15c2->n16c2->n17c2
-Y3->n3c3->n4c3->n5c3->n6c3->n7c3->n8c3->n9c3->n10c3->n11c3->n12c3->n13c3->n14c3->n15c3->n16c3
-Y4->n2c4->n3c4->n4c4->n5c4->n6c4->n7c4->n8c4->n9c4->n10c4->n11c4->n12c4->n13c4->n14c4->n15c4
-Y5->n3c5->n4c5->n5c5->n8c5->n9c5->n10c5->n11c5->n12c5->n13c5->n14c5
-Y6->n3c6->n4c6->n9c6->n10c6->n11c6->n12c6->n13c6->n14c6->n15c6
-Y7->n2c7->n3c7->n4c7->n5c7->n9c7->n10c7->n11c7->n12c7->n13c7->n14c7->n15c7->n16c7
-Y8->n2c8->n3c8->n4c8->n5c8->n9c8->n10c8->n11c8->n12c8->n13c8->n14c8->n15c8->n16c8->n17c8->n18c8
-Y9->n1c9->n2c9->n3c9->n5c9->n8c9->n9c9->n10c9->n11c9->n12c9->n13c9->n14c9->n15c9->n16c9
-Y10->n2c10->n3c10->n4c10->n8c10->n9c10->n10c10->n11c10->n12c10->n13c10->n14c10->n15c10->n16c10
-Y11->n3c11->n4c11->n5c11->n6c11->n7c11->n8c11->n9c11->n10c11->n11c11->n12c11->n13c11->n14c11->n15c11->n16c11->n17c11
+Y1->n3c1->n5c1->n6c1->n18c1
+Y2->n3c2->n11c2->n12c2->n17c2
+Y3->n3c3->n10c3->n11c3->n12c3->n16c3
+Y4->n2c4->n11c4->n12c4->n15c4
+Y5->n14c5
+Y6->n15c6
+Y7->n2c7->n5c7->n16c7
+Y8->n2c8->n5c8->n14c8->n15c8->n16c8->n17c8->n18c8
+Y9->n1c9->n2c9->n3c9->n5c9->n15c9->n16c9
+Y10->n2c10->n3c10->n4c10->n8c10->n9c10->n16c10
+Y11->n3c11->n4c11->n5c11->n6c11->n7c11->n8c11->n9c11->n17c11
 Y12->n4c12->n5c12->n6c12->n7c12->n8c12->n9c12->n10c12->n11c12->n12c12->n13c12->n14c12->n15c12->n16c12->n17c12->n18c12->n19c12
 Y13->n5c13->n6c13->n7c13->n8c13->n9c13->n10c13
-Y14->n3c14->n4c14->n5c14->n6c14->n7c14->n8c14->n9c14->n10c14->n11c14
+Y14->n3c14->n4c14->n5c14->n6c14->n8c14->n9c14->n10c14->n11c14
 Y15->n2c15->n4c15->n5c15->n6c15->n7c15->n10c15->n11c15->n12c15
 Y16->n2c16->n4c16->n5c16->n6c16->n11c16->n12c16
 Y17->n3c17->n5c17->n6c17->n11c17

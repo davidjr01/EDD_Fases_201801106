@@ -97,6 +97,26 @@ public class LCliente {
         
     }
     
+    public Lista_Capa BuscarIdImagen(String cliente){
+        Nodo aux = cabecera;
+        Lista_Capa listac=new Lista_Capa();
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c.equals(cliente)){
+                listac=aux.imagenes.ObtenerId();
+                aux=null;
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }
+        return listac;
+        
+        
+    }
+    
     
     
     public Boolean Login(String Dpi,String contra){
@@ -237,11 +257,29 @@ public class LCliente {
             }
             
         }
-    
-        
+  
         
     }
     
+     
+     public void GraficarAVL(String cliente){
+        Nodo aux = cabecera;
+        int tamaño=0;
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c.equals(cliente)){
+                aux.imagenes.Graficar();
+                aux=null;
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }
+  
+        
+    }
     public void Mostrar(){
         if(cabecera == null){
             System.err.print("La lista se encuentra vacia");
