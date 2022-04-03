@@ -3,7 +3,7 @@ package edd_fase2;
 
 public class Lista_Capa {
     private Nodo cabecera;
-    private int tamanio=0;
+    public int tamanio=0;
     
     public class Nodo{
         public int valor;
@@ -19,6 +19,7 @@ public class Lista_Capa {
         Nodo nodonuevo = new Nodo(valor);
         if(cabecera == null){
             cabecera = nodonuevo;
+            tamanio+=1;
         }
         else{
             Nodo aux = cabecera;
@@ -26,8 +27,12 @@ public class Lista_Capa {
                 aux=aux.siguiente;
             }
             aux.siguiente = nodonuevo;
+            tamanio+=1;
         }
         
+    }
+    public int tamaño(){
+        return this.tamanio;
     }
     
     public int MostrarCapas(int x){

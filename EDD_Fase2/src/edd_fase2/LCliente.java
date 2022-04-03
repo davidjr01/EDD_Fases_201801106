@@ -1,6 +1,8 @@
 
 package edd_fase2;
 
+import javax.swing.JOptionPane;
+
 public class LCliente {
     public Nodo cabecera;
     private int tamanio=0;
@@ -121,6 +123,7 @@ public class LCliente {
     }
    
      public void AddCapas(String cliente ,int x,Lista_Pixel lista){
+         
         Nodo aux = cabecera;
         while(aux != null){
             String c=aux.cliente.dpi;
@@ -173,6 +176,68 @@ public class LCliente {
             
         }
         return tamaño;
+        
+        
+    }
+     
+     public Lista_Capa RecorridoCapa(String cliente,String recorrido){
+        Nodo aux = cabecera;
+        Lista_Capa aux2=new Lista_Capa();
+        int tamaño=0;
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c.equals(cliente)){
+                aux2=aux.capas.Recorrido(recorrido);
+                aux=null;
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }
+        return aux2;
+        
+        
+    }
+     
+    public Lista_Pixel2 RecorridoCapa2(String cliente){
+        Nodo aux = cabecera;
+        Lista_Pixel2 aux2=new Lista_Pixel2();
+        int tamaño=0;
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c.equals(cliente)){
+                aux2=aux.capas.Recorrido2();
+                aux=null;
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }
+        return aux2;
+        
+        
+    }
+     
+     public void GraficarABB(String cliente){
+        Nodo aux = cabecera;
+        int tamaño=0;
+        while(aux != null){
+            String c=aux.cliente.dpi;
+            if (c.equals(cliente)){
+                aux.capas.Graficar();
+                aux=null;
+            }
+            else{
+                aux = aux.siguiente;
+                
+            }
+            
+        }
+    
         
         
     }

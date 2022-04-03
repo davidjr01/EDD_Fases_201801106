@@ -14,6 +14,9 @@ public class Pixel {
         this.color=color;
         
     }
+    
+    public Pixel(){
+    }
 
     public int getFila() {
         return fila;

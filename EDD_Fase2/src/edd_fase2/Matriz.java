@@ -267,7 +267,7 @@ public class Matriz {
     
     }
     
-     public void  Graficar_Nodo3(){
+     public void  Graficar_Nodo3(String nombress){
         int controlx=0;
         nCabecera CFila,CColumna;
         CFila = this.CFilas.primero;
@@ -432,7 +432,7 @@ public class Matriz {
         FileWriter fw=null;
         PrintWriter pw=null;
         try{
-            fw=new FileWriter("Grafica.dot");
+            fw=new FileWriter(nombress+".dot");
             pw=new PrintWriter(fw);
             pw.write(resultado);
             pw.close();
@@ -447,7 +447,7 @@ public class Matriz {
         
         try{
             ProcessBuilder pb;
-            pb=new ProcessBuilder("dot","-Gnslimit=2","-Tpng","Grafica.dot","-o","matriz.png");
+            pb=new ProcessBuilder("dot","-Gnslimit=2","-Tpng",nombress+".dot","-o",nombress+".png");
             pb.redirectErrorStream(true);
             pb.start(); 
         }catch(Exception e){
